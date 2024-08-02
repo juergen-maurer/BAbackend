@@ -3,6 +3,9 @@ package com.example.webshopba.repository;
 import com.example.webshopba.model.Kunden;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.Optional;
+
 public interface KundenRepository extends JpaRepository<Kunden, Long> {
-    Kunden findByUsername(String username);
+    Optional<Kunden> findByEmail(String email);
+
 }

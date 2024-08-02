@@ -20,7 +20,25 @@ public class KundenService {
 
     public Kunden registerNewUserAccount(Kunden kunden) {
         kunden.setPassword(passwordEncoder.encode(kunden.getPassword()));
+        kunden.setEmail(kunden.getEmail());
+        kunden.setFirstName(kunden.getFirstName());
+        kunden.setLastName(kunden.getLastName());
         return kundenRepository.save(kunden);
+    }
+
+    public Kunden authenticateUser(String email, String password) {
+        Kunden user = findByEmail(email);
+        if (!passwordEncoder.matches(password, user.getPassword())) {
+            throw new IllegalArgumentException("Invalid password");
+        }
+        return user;
+    }
+
+    public void logoutUser() {
+
+    }
+    private Kunden findByEmail(String email) {
+        return kundenRepository.findByEmail(email).orElseThrow(() -> new EntityNotFoundException("User not found with email: " + email));
     }
     public Kunden findById(Long id) {
         return kundenRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("User not found with id: " + id));
