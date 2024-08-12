@@ -3,9 +3,9 @@ package com.example.webshopba.model;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
+
 import java.util.List;
-import java.util.Optional;
+
 
 @Entity
 public class Cart {
@@ -24,9 +24,6 @@ public class Cart {
         return cartItems;
     }
 
-    public void setCartItems(List<CartItem> cartItems) {
-        this.cartItems = cartItems;
-    }
 
     public Long getId() {
         return id;

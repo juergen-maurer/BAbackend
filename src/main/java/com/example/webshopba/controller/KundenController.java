@@ -62,7 +62,7 @@ public class KundenController {
         return ResponseEntity.ok(kunden);
     }
 
-    private static class AuthResponse {
+    /*private static class AuthResponse {
 
         private String firstName;
 
@@ -72,7 +72,7 @@ public class KundenController {
         }
 
         // Getters and Setters
-    }
+    }*/
 
     // Weitere Endpunkte können hier hinzugefügt werden
 }
