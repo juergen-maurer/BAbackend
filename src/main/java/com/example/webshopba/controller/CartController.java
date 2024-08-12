@@ -18,25 +18,33 @@ public class CartController {
     }
 
     @GetMapping("/get")
-    public Cart getWarenkorb() {
-        return cartService.getWarenkorb();
+    public ResponseEntity<Cart> getWarenkorb(@RequestParam(name = "cartId") Long cartId) {
+        try {
+            Cart cart = cartService.getWarenkorb(cartId);
+            return ResponseEntity.ok(cart);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
     }
 
     @PostMapping("/add")
-    public ResponseEntity<?> addProductToCart(@RequestParam(name = "productId") Long productId, @RequestParam(name = "quantity") int quantity) {
+    public ResponseEntity<?> addProductToCart(@RequestParam(name = "cartId") Long cartId,@RequestParam(name = "productId") Long productId, @RequestParam(name = "quantity") int quantity) {
+
         System.out.println("Produkt-ID: " + productId + ", Menge: " + quantity);
         try {
-            Cart updatedCart = cartService.addProductToCart(productId, quantity);
+            Cart updatedCart = cartService.addProductToCart(cartId, productId, quantity);
             return ResponseEntity.ok().body(updatedCart);
         } catch (Exception e) {
             System.out.println("Fehler beim Hinzufügen des Produkts zum Warenkorb: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Fehler beim Hinzufügen des Produkts");
         }
     }
+
+
     @DeleteMapping("/clear")
-    public ResponseEntity<?> clearCart() {
+    public ResponseEntity<?> clearCart(@RequestParam(name = "cartId") Long cartId) {
         try {
-            Cart updatedCart = cartService.clearCart();
+            Cart updatedCart = cartService.clearCart(cartId);
             return ResponseEntity.ok().body(updatedCart);
         } catch (Exception e) {
             e.printStackTrace();
@@ -44,20 +52,22 @@ public class CartController {
         }
     }
 
+
     @DeleteMapping("/remove/{productId}")
-    public ResponseEntity<?> removeProductFromCart(@PathVariable Long productId) {
+    public ResponseEntity<?> removeProductFromCart(@RequestParam(name = "cartId") Long cartId, @PathVariable Long productId) {
         try {
-            Cart updatedCart = cartService.removeProductFromCart(productId);
+            Cart updatedCart = cartService.removeProductFromCart(cartId, productId);
             return ResponseEntity.ok(updatedCart);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body("Failed to remove product from cart: " + e.getMessage());
         }
     }
 
+
     @PutMapping("/update")
-    public ResponseEntity<?> updateProductInCart(@RequestParam(name = "productId") Long productId, @RequestParam(name = "quantity") int quantity) {
+    public ResponseEntity<?> updateProductInCart(@RequestParam(name = "cartId") Long cartId, @RequestParam(name = "productId") Long productId, @RequestParam(name = "quantity") int quantity) {
         try {
-            Cart updatedCart = cartService.updateProductInCart(productId, quantity);
+            Cart updatedCart = cartService.updateProductInCart(cartId, productId, quantity);
             return ResponseEntity.ok(updatedCart);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body("Failed to update product in cart: " + e.getMessage());

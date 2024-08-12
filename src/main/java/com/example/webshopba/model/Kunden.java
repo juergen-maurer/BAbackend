@@ -1,9 +1,6 @@
 package com.example.webshopba.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Kunden {
@@ -14,6 +11,9 @@ public class Kunden {
     private String email;
     private String firstName;
     private String lastName;
+
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Cart warenkorb;
 
     // Konstruktoren, Getter und Setter
     public Kunden() {
@@ -59,5 +59,13 @@ public class Kunden {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Long getWarenkorbId() {
+        return warenkorb.getId();
+    }
+
+    public void setWarenkorb(Cart warenkorb) {
+        this.warenkorb = warenkorb;
     }
 }

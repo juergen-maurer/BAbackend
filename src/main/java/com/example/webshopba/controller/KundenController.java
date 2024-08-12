@@ -28,29 +28,14 @@ public class KundenController {
         Kunden authenticatedKunden = kundenService.authenticateUser(loginRequest.getEmail(), loginRequest.getPassword());
         Map<String, String> response = new HashMap<>();
         response.put("email", authenticatedKunden.getEmail());
-        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(response);
+        response.put("firstName", authenticatedKunden.getFirstName());
+        response.put("lastName", authenticatedKunden.getLastName());
+        response.put("warenkorbId", authenticatedKunden.getWarenkorbId().toString());
 
-       // Kunden authenticatedKunden = kundenService.authenticateUser(loginRequest.getEmail(), loginRequest.getPassword());
-        //return ResponseEntity.ok(new AuthResponse(authenticatedKunden.getFirstName(), authenticatedKunden.getLastName(), authenticatedKunden.getEmail()));
+        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(response);
     }
 
 
-   /* @PostMapping("/logout")
-    public ResponseEntity<?> logoutUser() {
-        kundenService.logoutUser();
-        return ResponseEntity.ok().build();
-    }*/
-
-
-    /*@PostMapping("/login")
-    public ResponseEntity<Map<String, String>> login(@RequestBody LoginRequest loginRequest) {
-        // Authentication logic here
-        Map<String, String> response = new HashMap<>();
-        response.put("token", "generated-token");
-        response.put("firstName", "John");
-        response.put("lastName", "Doe");
-        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(response);
-    }*/
 
     @PostMapping("/register")
     public ResponseEntity<Map<String, String>> register(@RequestBody Kunden user) {
@@ -60,13 +45,9 @@ public class KundenController {
         response.put("email", registeredKunden.getEmail());
         response.put("firstName", registeredKunden.getFirstName());
         response.put("lastName", registeredKunden.getLastName());
+        response.put("warenkorbId", registeredKunden.getWarenkorbId().toString());
         return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(response);
     }
-    /*@PostMapping("/register")
-    public ResponseEntity<Kunden> registerUser(@RequestBody Kunden kunden) {
-        Kunden registeredKunden = kundenService.registerNewUserAccount(kunden);
-        return new ResponseEntity<>(registeredKunden, HttpStatus.CREATED);
-    }*/
 
 
     @PostMapping("/logout")

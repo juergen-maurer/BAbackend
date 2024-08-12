@@ -6,10 +6,10 @@ import com.example.webshopba.model.Product;
 import com.example.webshopba.repository.CartItemRepository;
 import com.example.webshopba.repository.CartRepository;
 import com.example.webshopba.repository.ProductRepository;
+import jakarta.persistence.EntityNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,7 +17,7 @@ import java.util.Optional;
 
 @Service
 public class CartService {
-    private static final Logger logger = LoggerFactory.getLogger(CartService.class);
+    //private static final Logger logger = LoggerFactory.getLogger(CartService.class);
     private final CartRepository cartRepository;
     private final ProductRepository productRepository;
 
@@ -31,10 +31,10 @@ public class CartService {
     }
 
 
-    public Cart addProductToCart(Long productId, int quantity) {
+    public Cart addProductToCart(Long cartId, Long productId, int quantity) {
         Product product = productRepository.findById(productId)
                 .orElseThrow(() -> new RuntimeException("Product not found"));
-        Cart cart = getWarenkorb(); // Verwendet die vorhandene Methode, um den aktuellen Warenkorb zu erhalten
+        Cart cart = getWarenkorb(cartId); // Verwendet die vorhandene Methode, um den aktuellen Warenkorb zu erhalten
 
 
         Optional<CartItem> existingCartItem = cartItemRepository.findByCartIdAndProductId(cart.getId(), productId);
@@ -53,31 +53,21 @@ public class CartService {
         }
 
         return cartRepository.save(cart); // Aktualisierten Warenkorb speichern
-
-
-        /*CartItem cartItem = new CartItem();
-        cartItem.setProduct(product); // Setzt das Product-Objekt im CartItem
-        cartItem.setQuantity(quantity); // Setzt die Menge
-        cart.addItem(cartItem);
-        cartItemRepository.save(cartItem); // Speichert das CartItem in der Datenbank
-        return cartRepository.save(cart); // Speichert den aktualisierten Cart in der Datenbank */
     }
-    public Cart getWarenkorb() {
-        return cartRepository.findAll(PageRequest.of(0, 1))
-                .stream()
-                .findFirst()
-                .orElseGet(() -> new Cart());
+    public Cart getWarenkorb(Long cartId) {
+        return cartRepository.findById(cartId).orElseThrow(() -> new EntityNotFoundException("Cart not found with id: " + cartId));
     }
+
     @Transactional
-    public Cart clearCart() {
-        Cart cart = getWarenkorb(); // Annahme, dass diese Methode den aktuellen Warenkorb des Benutzers zurückgibt
+    public Cart clearCart(Long cartId) {
+        Cart cart = getWarenkorb(cartId); // Annahme, dass diese Methode den aktuellen Warenkorb des Benutzers zurückgibt
         cartItemRepository.deleteByCartId(cart.getId()); // Löscht alle CartItems, die zum Warenkorb gehören
         return cartRepository.save(cart); // Speichert den aktualisierten Warenkorb in der Datenbank
         //urn cart; // Gibt den unveränderten Warenkorb zurück, da die CartItems direkt in der Datenbank gelöscht wurden
     }
     @Transactional
-    public Cart removeProductFromCart(Long productId) {
-        Cart cart = getWarenkorb(); // Annahme, dass diese Methode den aktuellen Warenkorb des Benutzers zurückgibt
+    public Cart removeProductFromCart(Long cartId, Long productId) {
+        Cart cart = getWarenkorb(cartId); // Annahme, dass diese Methode den aktuellen Warenkorb des Benutzers zurückgibt
         Optional<CartItem> cartItemOptional = cart.getCartItems().stream()
                 .filter(item -> item.getProduct().getId().equals(productId))
                 .findFirst();
@@ -91,8 +81,8 @@ public class CartService {
         return cartRepository.save(cart); // Speichert den aktualisierten Warenkorb in der Datenbank
     }
 
-    public Cart updateProductInCart(Long productId, int quantity) {
-        Cart cart = getWarenkorb(); // Annahme, dass diese Methode den aktuellen Warenkorb des Benutzers zurückgibt
+    public Cart updateProductInCart(Long cartId, Long productId, int quantity) {
+        Cart cart = getWarenkorb(cartId); // Annahme, dass diese Methode den aktuellen Warenkorb des Benutzers zurückgibt
         Optional<CartItem> cartItemOptional = cart.getCartItems().stream()
                 .filter(item -> item.getProduct().getId().equals(productId))
                 .findFirst();

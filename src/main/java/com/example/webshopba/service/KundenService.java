@@ -1,5 +1,6 @@
 package com.example.webshopba.service;
 
+import com.example.webshopba.model.Cart;
 import com.example.webshopba.model.Kunden;
 import com.example.webshopba.repository.KundenRepository;
 import jakarta.persistence.EntityNotFoundException;
@@ -20,6 +21,7 @@ public class KundenService {
 
     public Kunden registerNewUserAccount(Kunden kunden) {
         kunden.setPassword(passwordEncoder.encode(kunden.getPassword()));
+        kunden.setWarenkorb(new Cart());
         kunden.setEmail(kunden.getEmail());
         kunden.setFirstName(kunden.getFirstName());
         kunden.setLastName(kunden.getLastName());

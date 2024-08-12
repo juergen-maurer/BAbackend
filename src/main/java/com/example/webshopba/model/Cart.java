@@ -19,22 +19,6 @@ public class Cart {
     private List<CartItem> cartItems;
 
 
-    public void addItem(CartItem newItem) {
-        newItem.setCart(this); // Setze die Referenz auf diesen Cart im CartItem
-        Optional<CartItem> existingItem = cartItems.stream()
-                .filter(item -> item.getProduct().getId().equals(newItem.getProduct().getId()))
-                .findFirst();
-
-        if (existingItem.isPresent()) {
-            CartItem item = existingItem.get();
-            item.setQuantity(item.getQuantity() + newItem.getQuantity());
-        } else {
-            cartItems.add(newItem);
-            this.setCartItems(cartItems);
-        }
-    }
-
-
     // Getter und Setter für items
     public List<CartItem> getCartItems() {
         return cartItems;
