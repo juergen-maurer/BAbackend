@@ -28,8 +28,15 @@ public class KundenService {
         return kundenRepository.save(kunden);
     }
 
+    public boolean emailExists(String email) {
+        return kundenRepository.findByEmail(email).isPresent();
+    }
+
     public Kunden authenticateUser(String email, String password) {
         Kunden user = findByEmail(email);
+        if (user == null) {
+            throw new EntityNotFoundException("User not found with email: " + email);
+        }
         if (!passwordEncoder.matches(password, user.getPassword())) {
             throw new IllegalArgumentException("Invalid password");
         }
@@ -40,7 +47,7 @@ public class KundenService {
 
     }
     private Kunden findByEmail(String email) {
-        return kundenRepository.findByEmail(email).orElseThrow(() -> new EntityNotFoundException("User not found with email: " + email));
+        return kundenRepository.findByEmail(email).orElse(null);
     }
     public Kunden findById(Long id) {
         return kundenRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("User not found with id: " + id));
