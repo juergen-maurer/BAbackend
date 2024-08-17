@@ -46,6 +46,31 @@ public class KundenService {
     public void logoutUser() {
 
     }
+
+    public Kunden updateCustomerDetails( Kunden updatedKunden) {
+        Kunden existingKunden = findById(updatedKunden.getId());
+            existingKunden.setFirstName(updatedKunden.getFirstName());
+            existingKunden.setLastName(updatedKunden.getLastName());
+            existingKunden.setEmail(updatedKunden.getEmail());
+
+
+        return kundenRepository.save(existingKunden);
+    }
+
+    public boolean changePassword(Long id, String oldPassword, String newPassword) {
+        Kunden existingKunden = findById(id);
+        if (!passwordEncoder.matches(oldPassword, existingKunden.getPassword())) {
+            return false;
+        }
+        existingKunden.setPassword(passwordEncoder.encode(newPassword));
+        kundenRepository.save(existingKunden);
+        return true;
+    }
+
+    public boolean checkPassword(Kunden updatedKunde , String password) {
+        Kunden existingKunden = findById(updatedKunde.getId());
+        return passwordEncoder.matches(password, existingKunden.getPassword());
+    }
     private Kunden findByEmail(String email) {
         return kundenRepository.findByEmail(email).orElse(null);
     }

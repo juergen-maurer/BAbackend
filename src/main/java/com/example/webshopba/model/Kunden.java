@@ -68,4 +68,8 @@ public class Kunden {
     public void setWarenkorb(Cart warenkorb) {
         this.warenkorb = warenkorb;
     }
+
+    public Long getId() {
+        return id;
+    }
 }
