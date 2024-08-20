@@ -1,5 +1,6 @@
 package com.example.webshopba.service;
 
+import com.example.webshopba.enums.ProductCategory;
 import com.example.webshopba.model.Product;
 import com.example.webshopba.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,5 +34,13 @@ public class ProductService {
     }
     public long countProducts() {
         return productRepository.count();
+    }
+
+    public List<Product> getProductsByCategory(ProductCategory category) {
+        return productRepository.findByCategory(category);
+    }
+
+    public void deleteAllProducts() {
+        productRepository.deleteAll();
     }
 }

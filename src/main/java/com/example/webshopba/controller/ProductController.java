@@ -1,5 +1,6 @@
 package com.example.webshopba.controller;
 
+import com.example.webshopba.enums.ProductCategory;
 import com.example.webshopba.model.Product;
 import com.example.webshopba.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,5 +36,16 @@ public class ProductController {
     @DeleteMapping("/{id}")
     public void deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
+    }
+
+
+    @GetMapping("/category/{category}")
+    public List<Product> getProductsByCategory(@PathVariable String category) {
+        try {
+            ProductCategory productCategory = ProductCategory.valueOf(category.toUpperCase());
+            return productService.getProductsByCategory(productCategory);
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException("Invalid category");
+        }
     }
 }
