@@ -1,5 +1,6 @@
 package com.example.webshopba.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
@@ -18,6 +19,10 @@ public class Cart {
     @JsonManagedReference
     private List<CartItem> cartItems;
 
+    @ManyToOne
+    @JsonIgnore
+    private Kunden kunde;
+
 
     // Getter und Setter für items
     public List<CartItem> getCartItems() {
@@ -32,6 +37,8 @@ public class Cart {
     public void setId(Long id) {
         this.id = id;
     }
+
+
 }
     // Konstruktoren, Getter und Setter
 

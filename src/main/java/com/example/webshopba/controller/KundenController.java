@@ -2,6 +2,7 @@ package com.example.webshopba.controller;
 
 
 import com.example.webshopba.ChangePasswordRequest;
+import com.example.webshopba.KundenResponse;
 import com.example.webshopba.LoginRequest;
 import com.example.webshopba.UpdateRequest;
 import com.example.webshopba.model.Kunden;
@@ -34,7 +35,6 @@ public class KundenController {
         try {
             Kunden authenticatedKunden = kundenService.authenticateUser(loginRequest.getEmail(), loginRequest.getPassword());
             response.put("kundenId", authenticatedKunden.getId().toString());
-            System.out.println(authenticatedKunden.getId());
             response.put("email", authenticatedKunden.getEmail());
             response.put("firstName", authenticatedKunden.getFirstName());
             response.put("lastName", authenticatedKunden.getLastName());
@@ -60,7 +60,6 @@ public class KundenController {
         }
         Kunden registeredKunden = kundenService.registerNewUserAccount(user);
         response.put("kundenId", registeredKunden.getId().toString());
-        System.out.println(registeredKunden.getId());
         response.put("email", registeredKunden.getEmail());
         response.put("firstName", registeredKunden.getFirstName());
         response.put("lastName", registeredKunden.getLastName());
@@ -82,9 +81,14 @@ public class KundenController {
     }
 
     @GetMapping("/profile")
-    public ResponseEntity<Kunden> getUser(@RequestParam Long id) {
-        Kunden kunden = kundenService.findById(id);
-        return ResponseEntity.ok(kunden);
+    public ResponseEntity<KundenResponse> getUser(@RequestParam Long id) {
+        try {
+            Kunden kunden = kundenService.findById(id);
+            KundenResponse response = new KundenResponse(kunden.getId(), kunden.getEmail(), kunden.getFirstName(), kunden.getLastName(), kunden.getLastUsedAddress(), kunden.getBestellungen());
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(null);
+        }
     }
 
     @PutMapping("/profile/{kunde}")

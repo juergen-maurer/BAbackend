@@ -1,6 +1,9 @@
 package com.example.webshopba.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 public class Kunden {
@@ -9,22 +12,23 @@ public class Kunden {
     private Long id;
     private String password;
     private String email;
+
     private String firstName;
+
+
     private String lastName;
+    @Embedded
+    private Address lastUsedAddress;
+    @OneToMany(mappedBy = "kunde", cascade = CascadeType.ALL)
+    @JsonIgnore
+    private List<Bestellung> bestellungen;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonIgnore
     private Cart warenkorb;
 
     // Konstruktoren, Getter und Setter
     public Kunden() {
-    }
-
-    public Kunden(String password, String email, String firstName, String lastName) {
-
-        this.password = password;
-        this.email = email;
-        this.firstName = firstName;
-        this.lastName = lastName;
     }
 
     // Getter und Setter
@@ -71,5 +75,23 @@ public class Kunden {
 
     public Long getId() {
         return id;
+    }
+
+
+    public Address getLastUsedAddress() {
+        return lastUsedAddress;
+    }
+
+    public List<Bestellung> getBestellungen() {
+        return bestellungen;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+
+    public void setLastUsedAddress(Address lastUsedAddress) {
+        this.lastUsedAddress = lastUsedAddress;
     }
 }
