@@ -34,4 +34,23 @@ public class OrderRequest {
         return warenkorbId;
     }
 
+    public void setPaymentMethod(PaymentMethod paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
+
+    public void setCartItems(List<CartItem> cartItems) {
+        this.cartItems = cartItems;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
+    public void setWarenkorbId(Long warenkorbId) {
+        this.warenkorbId = warenkorbId;
+    }
 }
