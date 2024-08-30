@@ -15,6 +15,8 @@ public class Product {
     private String description;
     private double price;
     private ProductCategory category; // Verwendung des ProductCategory enum
+    private String imageUrl; // Neues Feld für die Bild-URL
+
 
 
     // Konstruktoren, Getter und Setter
@@ -57,5 +59,13 @@ public class Product {
 
     public void setCategory(ProductCategory category) {
         this.category = category;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

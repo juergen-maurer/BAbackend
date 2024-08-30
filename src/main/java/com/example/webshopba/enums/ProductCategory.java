@@ -2,7 +2,7 @@ package com.example.webshopba.enums;
 
 public enum ProductCategory {
     ELECTRONICS("Elektronik"),
-    BOOKS("Bücher"),
+    BOOKS("Buecher"),
     HOME("Haushalt"),
     FASHION("Fashion"),;
 
