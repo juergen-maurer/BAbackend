@@ -47,7 +47,9 @@ public class OrderService {
         customerOrder.setPaymentMethod(orderRequest.getPaymentMethod());
         customerOrder.setTotal(orderRequest.getTotal());
         customerOrder.setKunde(kunde);
-        orderRepository.save(customerOrder);
+        //orderRepository.save(customerOrder);
+        customerOrder = orderRepository.save(customerOrder); // Ensure the saved order is returned with ID
+
 
         // Create and save the BestellungsCart
         BestellungsCart bestellungsCart = new BestellungsCart();
@@ -67,19 +69,16 @@ public class OrderService {
         System.out.println(bestellungsCart);
         this.orderRepository.save(customerOrder);
 
-
-
         kunde.setLastUsedAddress(orderRequest.getAddress());
 
         // Clear customer's cart
         cartItemRepository.deleteByCartId(cart.getId());
 
-
         // Process payment (mock implementation)
         boolean paymentSuccess = processPayment(orderRequest.getPaymentMethod());
 
         // Update inventory (mock implementation)
-        updateInventory(orderRequest.getCartItems());
+        //updateInventory(orderRequest.getCartItems());
 
         // Create response
         OrderResponse response = new OrderResponse();
@@ -90,12 +89,12 @@ public class OrderService {
         return response;
     }
 
-    private boolean processPayment(PaymentMethod paymentMethod) {
+    public boolean processPayment(PaymentMethod paymentMethod) {
         // Mock payment processing logic
         return true;
     }
 
-    private void updateInventory(List<CartItem> cartItems) {
+    public void updateInventory(List<CartItem> cartItems) {
         // Mock inventory update logic
     }
 }

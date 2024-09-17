@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/jurge/IdeaProjects/WebshopBA/src/main</OriginalElement>
+  <nodes>
+    <node x="1257.0" y="826.0">com.example.webshopba.config.WebConfig</node>
+    <node x="870.5" y="886.0">com.example.webshopba.service.OrderService</node>
+    <node x="654.5" y="-14.0">com.example.webshopba.enums.ProductCategory</node>
+    <node x="1098.5" y="346.0">com.example.webshopba.model.BestellungsCart</node>
+    <node x="360.5" y="606.0">com.example.webshopba.repository.OrderRepository</node>
+    <node x="1102.0" y="226.0">com.example.webshopba.model.BestellungsCartItem</node>
+    <node x="730.5" y="826.0">com.example.webshopba.model.Kunden</node>
+    <node x="788.0" y="346.0">com.example.webshopba.model.Address</node>
+    <node x="1081.0" y="1066.0">com.example.webshopba.ChangePasswordRequest</node>
+    <node x="743.5" y="606.0">com.example.webshopba.model.Cart</node>
+    <node x="122.0" y="606.0">com.example.webshopba.repository.CartRepository</node>
+    <node x="95.5" y="826.0">com.example.webshopba.service.CartService</node>
+    <node x="707.0" y="406.0">com.example.webshopba.model.CartItem</node>
+    <node x="1012.5" y="826.0">com.example.webshopba.KundenResponse</node>
+    <node x="812.0" y="1066.0">com.example.webshopba.controller.KundenController</node>
+    <node x="-118.0" y="886.0">com.example.webshopba.service.ProductService</node>
+    <node x="225.5" y="546.0">com.example.webshopba.repository.CartItemRepository</node>
+    <node x="245.0" y="1006.0">com.example.webshopba.controller.CartController</node>
+    <node x="477.0" y="546.0">com.example.webshopba.repository.BestellungsCartRepository</node>
+    <node x="877.0" y="406.0">com.example.webshopba.enums.PaymentMethod</node>
+    <node x="980.0" y="1006.0">com.example.webshopba.controller.OrderController</node>
+    <node x="-131.5" y="606.0">com.example.webshopba.repository.ProductRepository</node>
+    <node x="-11.0" y="546.0">com.example.webshopba.repository.KundenRepository</node>
+    <node x="1079.5" y="606.0">com.example.webshopba.model.Bestellung</node>
+    <node x="-144.5" y="1066.0">com.example.webshopba.DataLoader</node>
+    <node x="582.5" y="886.0">com.example.webshopba.service.KundenService</node>
+    <node x="1147.5" y="886.0">com.example.webshopba.LoginRequest</node>
+    <node x="867.5" y="606.0">com.example.webshopba.OrderRequest</node>
+    <node x="370.0" y="826.0">com.example.webshopba.WebshopBaApplication</node>
+    <node x="440.5" y="1066.0">com.example.webshopba.repository.BestellungsCartItemRepository</node>
+    <node x="111.5" y="1066.0">com.example.webshopba.controller.ProductController</node>
+    <node x="661.0" y="1006.0">com.example.webshopba.UpdateRequest</node>
+    <node x="263.0" y="886.0">com.example.webshopba.config.SecurityConfig</node>
+    <node x="690.0" y="106.0">com.example.webshopba.model.Product</node>
+    <node x="1260.5" y="606.0">com.example.webshopba.OrderResponse</node>
+    <node x="-10.0" y="1006.0">com.example.webshopba.controller.RedirectController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.webshopba.DataLoader" target="com.example.webshopba.service.ProductService" relationship="TO_ONE">
+      <point x="34.75" y="-14.0" />
+      <point x="-40.25" y="980.0" />
+      <point x="-35.0" y="980.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.BestellungsCartItem" target="com.example.webshopba.model.Product" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="1205.0" y="200.0" />
+      <point x="765.0" y="200.0" />
+      <point x="765.0" y="160.0" />
+      <point x="772.5" y="160.0" />
+      <point x="27.5" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.OrderService" target="com.example.webshopba.OrderResponse" relationship="CREATE">
+      <point x="37.25" y="-14.0" />
+      <point x="982.25" y="800.0" />
+      <point x="1185.0" y="800.0" />
+      <point x="1185.0" y="780.0" />
+      <point x="1345.0" y="780.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.OrderService" target="com.example.webshopba.model.BestellungsCartItem" relationship="CREATE">
+      <point x="37.25" y="-14.0" />
+      <point x="982.25" y="800.0" />
+      <point x="1185.0" y="800.0" />
+      <point x="1185.0" y="780.0" />
+      <point x="1445.0" y="780.0" />
+      <point x="1445.0" y="320.0" />
+      <point x="1273.6666666666667" y="320.0" />
+      <point x="68.66666666666666" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.DataLoader" target="com.example.webshopba.model.Product" relationship="CREATE">
+      <point x="-34.75" y="-14.0" />
+      <point x="-109.75" y="1040.0" />
+      <point x="-195.0" y="1040.0" />
+      <point x="-195.0" y="220.0" />
+      <point x="717.5" y="220.0" />
+      <point x="-27.5" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.OrderService" target="com.example.webshopba.repository.OrderRepository" relationship="TO_ONE">
+      <point x="-37.25" y="-14.0" />
+      <point x="907.75" y="780.0" />
+      <point x="325.0" y="780.0" />
+      <point x="325.0" y="760.0" />
+      <point x="445.0" y="760.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.UpdateRequest" target="com.example.webshopba.model.Kunden" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="745.0" y="960.0" />
+      <point x="785.0" y="960.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.BestellungsCart" target="com.example.webshopba.model.Bestellung" relationship="TO_ONE">
+      <point x="0.0" y="14.0" />
+      <point x="1185.0" y="580.0" />
+      <point x="1177.75" y="580.0" />
+      <point x="32.75" y="-14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.Bestellung" target="com.example.webshopba.model.BestellungsCart" relationship="TO_ONE">
+      <point x="-32.75" y="-14.0" />
+      <point x="1112.25" y="580.0" />
+      <point x="1105.0" y="580.0" />
+      <point x="1105.0" y="560.0" />
+      <point x="1127.3333333333333" y="560.0" />
+      <point x="-57.66666666666667" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.OrderService" target="com.example.webshopba.repository.CartRepository" relationship="TO_ONE">
+      <point x="-37.25" y="-14.0" />
+      <point x="907.75" y="780.0" />
+      <point x="325.0" y="780.0" />
+      <point x="325.0" y="700.0" />
+      <point x="205.0" y="700.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.controller.CartController" target="com.example.webshopba.service.CartService" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="325.0" y="960.0" />
+      <point x="165.0" y="960.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.OrderService" target="com.example.webshopba.model.BestellungsCart" relationship="CREATE">
+      <point x="37.25" y="-14.0" />
+      <point x="982.25" y="800.0" />
+      <point x="1185.0" y="800.0" />
+      <point x="1185.0" y="780.0" />
+      <point x="1245.0" y="780.0" />
+      <point x="1245.0" y="600.0" />
+      <point x="1242.6666666666667" y="600.0" />
+      <point x="57.666666666666686" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.OrderRequest" target="com.example.webshopba.enums.PaymentMethod" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="945.0" y="580.0" />
+      <point x="965.0" y="580.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.controller.KundenController" target="com.example.webshopba.service.KundenService" relationship="TO_ONE">
+      <point x="-46.5" y="-14.0" />
+      <point x="858.5" y="980.0" />
+      <point x="665.0" y="980.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.OrderService" target="com.example.webshopba.model.Bestellung" relationship="CREATE">
+      <point x="37.25" y="-14.0" />
+      <point x="982.25" y="800.0" />
+      <point x="1185.0" y="800.0" />
+      <point x="1185.0" y="780.0" />
+      <point x="1188.6666666666667" y="780.0" />
+      <point x="43.66666666666667" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.OrderService" target="com.example.webshopba.repository.KundenRepository" relationship="TO_ONE">
+      <point x="-37.25" y="-14.0" />
+      <point x="907.75" y="780.0" />
+      <point x="325.0" y="780.0" />
+      <point x="325.0" y="720.0" />
+      <point x="85.0" y="720.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.OrderService" target="com.example.webshopba.repository.BestellungsCartRepository" relationship="TO_ONE">
+      <point x="-37.25" y="-14.0" />
+      <point x="907.75" y="780.0" />
+      <point x="325.0" y="780.0" />
+      <point x="325.0" y="760.0" />
+      <point x="605.0" y="760.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.KundenService" target="com.example.webshopba.repository.KundenRepository" relationship="TO_ONE">
+      <point x="-41.25" y="-14.0" />
+      <point x="623.75" y="680.0" />
+      <point x="85.0" y="680.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.CartService" target="com.example.webshopba.repository.CartRepository" relationship="TO_ONE">
+      <point x="34.75" y="-14.0" />
+      <point x="199.75" y="800.0" />
+      <point x="205.0" y="800.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.CartService" target="com.example.webshopba.model.CartItem" relationship="CREATE">
+      <point x="-34.75" y="-14.0" />
+      <point x="130.25" y="800.0" />
+      <point x="-155.0" y="800.0" />
+      <point x="-155.0" y="520.0" />
+      <point x="726.3333333333334" y="520.0" />
+      <point x="-38.66666666666667" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.controller.KundenController" target="com.example.webshopba.KundenResponse" relationship="CREATE">
+      <point x="46.5" y="-14.0" />
+      <point x="951.5" y="980.0" />
+      <point x="1105.0" y="980.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.ProductService" target="com.example.webshopba.repository.ProductRepository" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.CartItem" target="com.example.webshopba.model.Cart" relationship="TO_ONE">
+      <point x="0.0" y="14.0" />
+      <point x="765.0" y="580.0" />
+      <point x="764.25" y="580.0" />
+      <point x="-20.75" y="-14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.CartService" target="com.example.webshopba.repository.CartItemRepository" relationship="TO_ONE">
+      <point x="34.75" y="-14.0" />
+      <point x="199.75" y="800.0" />
+      <point x="205.0" y="800.0" />
+      <point x="205.0" y="660.0" />
+      <point x="325.0" y="660.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.Cart" target="com.example.webshopba.model.CartItem" relationship="TO_MANY">
+      <point x="20.75" y="-14.0" />
+      <point x="805.75" y="580.0" />
+      <point x="805.0" y="580.0" />
+      <point x="805.0" y="460.0" />
+      <point x="803.6666666666666" y="460.0" />
+      <point x="38.66666666666667" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.OrderRequest" target="com.example.webshopba.model.CartItem" relationship="TO_MANY">
+      <point x="0.0" y="-14.0" />
+      <point x="945.0" y="560.0" />
+      <point x="805.0" y="560.0" />
+      <point x="805.0" y="460.0" />
+      <point x="803.6666666666666" y="460.0" />
+      <point x="38.66666666666667" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.CartService" target="com.example.webshopba.repository.ProductRepository" relationship="TO_ONE">
+      <point x="34.75" y="-14.0" />
+      <point x="199.75" y="800.0" />
+      <point x="205.0" y="800.0" />
+      <point x="205.0" y="780.0" />
+      <point x="-35.0" y="780.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.Kunden" target="com.example.webshopba.model.Address" relationship="TO_ONE">
+      <point x="-27.25" y="-14.0" />
+      <point x="757.75" y="800.0" />
+      <point x="765.0" y="800.0" />
+      <point x="765.0" y="680.0" />
+      <point x="845.0" y="680.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.KundenService" target="com.example.webshopba.model.Cart" relationship="CREATE">
+      <point x="41.25" y="-14.0" />
+      <point x="706.25" y="660.0" />
+      <point x="757.3333333333334" y="660.0" />
+      <point x="-27.666666666666664" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.Product" target="com.example.webshopba.enums.ProductCategory" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.controller.OrderController" target="com.example.webshopba.service.OrderService" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="1065.0" y="960.0" />
+      <point x="945.0" y="960.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.BestellungsCart" target="com.example.webshopba.model.BestellungsCartItem" relationship="TO_MANY">
+      <point x="-43.25" y="-14.0" />
+      <point x="1141.75" y="320.0" />
+      <point x="1136.3333333333333" y="320.0" />
+      <point x="-68.66666666666666" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.BestellungsCartItem" target="com.example.webshopba.model.BestellungsCart" relationship="TO_ONE">
+      <point x="0.0" y="14.0" />
+      <point x="1205.0" y="320.0" />
+      <point x="1228.25" y="320.0" />
+      <point x="43.25" y="-14.0" />
+    </edge>
+    <edge source="com.example.webshopba.KundenResponse" target="com.example.webshopba.model.Address" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="1105.0" y="780.0" />
+      <point x="1045.0" y="780.0" />
+      <point x="1045.0" y="500.0" />
+      <point x="845.0" y="500.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.controller.ProductController" target="com.example.webshopba.service.ProductService" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="205.0" y="980.0" />
+      <point x="-35.0" y="980.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.Bestellung" target="com.example.webshopba.enums.PaymentMethod" relationship="TO_ONE">
+      <point x="-32.75" y="-14.0" />
+      <point x="1112.25" y="580.0" />
+      <point x="1105.0" y="580.0" />
+      <point x="1105.0" y="460.0" />
+      <point x="965.0" y="460.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.Bestellung" target="com.example.webshopba.model.Kunden" relationship="TO_ONE">
+      <point x="0.0" y="14.0" />
+      <point x="1145.0" y="740.0" />
+      <point x="805.0" y="740.0" />
+      <point x="805.0" y="800.0" />
+      <point x="812.25" y="800.0" />
+      <point x="27.25" y="-14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.CartItem" target="com.example.webshopba.model.Product" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="765.0" y="160.0" />
+      <point x="772.5" y="160.0" />
+      <point x="27.5" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.Kunden" target="com.example.webshopba.model.Bestellung" relationship="TO_MANY">
+      <point x="-27.25" y="-14.0" />
+      <point x="757.75" y="800.0" />
+      <point x="765.0" y="800.0" />
+      <point x="765.0" y="700.0" />
+      <point x="1065.0" y="700.0" />
+      <point x="1065.0" y="660.0" />
+      <point x="1101.3333333333333" y="660.0" />
+      <point x="-43.66666666666667" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.service.OrderService" target="com.example.webshopba.repository.CartItemRepository" relationship="TO_ONE">
+      <point x="-37.25" y="-14.0" />
+      <point x="907.75" y="780.0" />
+      <point x="325.0" y="780.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.OrderRequest" target="com.example.webshopba.model.Address" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="945.0" y="520.0" />
+      <point x="845.0" y="520.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.KundenResponse" target="com.example.webshopba.model.Bestellung" relationship="TO_MANY">
+      <point x="0.0" y="-14.0" />
+      <point x="1105.0" y="760.0" />
+      <point x="1065.0" y="760.0" />
+      <point x="1065.0" y="660.0" />
+      <point x="1101.3333333333333" y="660.0" />
+      <point x="-43.66666666666667" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.Cart" target="com.example.webshopba.model.Kunden" relationship="TO_ONE">
+      <point x="27.666666666666657" y="14.0" />
+      <point x="812.6666666666666" y="740.0" />
+      <point x="805.0" y="740.0" />
+      <point x="805.0" y="800.0" />
+      <point x="812.25" y="800.0" />
+      <point x="27.25" y="-14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.Kunden" target="com.example.webshopba.model.Cart" relationship="TO_ONE">
+      <point x="-27.25" y="-14.0" />
+      <point x="757.75" y="800.0" />
+      <point x="765.0" y="800.0" />
+      <point x="765.0" y="680.0" />
+      <point x="785.0" y="680.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.example.webshopba.model.Bestellung" target="com.example.webshopba.model.Address" relationship="TO_ONE">
+      <point x="-32.75" y="-14.0" />
+      <point x="1112.25" y="580.0" />
+      <point x="1105.0" y="580.0" />
+      <point x="1105.0" y="480.0" />
+      <point x="845.0" y="480.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.5572289156626506" showDependencies="true" x="635.0" y="550.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

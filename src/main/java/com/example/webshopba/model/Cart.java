@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -17,7 +18,7 @@ public class Cart {
 
     @OneToMany(mappedBy = "cart")
     @JsonManagedReference
-    private List<CartItem> cartItems;
+    private List<CartItem> cartItems = new ArrayList<>();
 
     @ManyToOne
     @JsonIgnore
@@ -29,6 +30,9 @@ public class Cart {
         return cartItems;
     }
 
+    public void setCartItems(List<CartItem> cartItems) {
+        this.cartItems = cartItems;
+    }
 
     public Long getId() {
         return id;
@@ -38,7 +42,9 @@ public class Cart {
         this.id = id;
     }
 
-
+    public void setKunde(Kunden kunde) {
+        this.kunde = kunde;
+    }
 }
     // Konstruktoren, Getter und Setter
 
