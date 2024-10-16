@@ -30,7 +30,7 @@ public class CartController {
     @PostMapping("/add")
     public ResponseEntity<?> addProductToCart(@RequestParam(name = "cartId") Long cartId,@RequestParam(name = "productId") Long productId, @RequestParam(name = "quantity") int quantity) {
 
-        System.out.println("Produkt-ID: " + productId + ", Menge: " + quantity);
+        //System.out.println("Produkt-ID: " + productId + ", Menge: " + quantity);
         try {
             Cart updatedCart = cartService.addProductToCart(cartId, productId, quantity);
             return ResponseEntity.ok().body(updatedCart);

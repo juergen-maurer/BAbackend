@@ -45,6 +45,10 @@ public class Cart {
     public void setKunde(Kunden kunde) {
         this.kunde = kunde;
     }
+
+    public Kunden getKunde() {
+        return kunde;
+    }
 }
     // Konstruktoren, Getter und Setter
 
