@@ -6,11 +6,11 @@ plugins {
 }
 
 sonar {
-    properties {
-        property "sonar.projectKey", "juergen-maurer_BAbackend"
-        property "sonar.organization", "juergen-maurer"
-        property "sonar.host.url", "https://sonarcloud.io"
-    }
+  properties {
+    property "sonar.projectKey", "juergen-maurer_BAbackend"
+    property "sonar.organization", "juergen-maurer"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 group = 'com.example'
