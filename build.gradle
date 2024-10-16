@@ -7,8 +7,9 @@ plugins {
 
 sonar {
   properties {
-    property "sonar.projectKey", "BAbackend"
-    property "sonar.projectName", "BAbackend"
+    property "sonar.projectKey", "juergen-maurer_BAbackend"
+    property "sonar.organization", "juergen-maurer"
+    property "sonar.host.url", "https://sonarcloud.io"
   }
 }
 
