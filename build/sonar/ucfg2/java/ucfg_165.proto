@@ -1,0 +1,39 @@
+
+<__sonar_lambda_3$com.example.webshopba.service.KundenServicen
+dC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/service/KundenService.javaN9 N({"startingBlock*¯
+startingBlockN9 N({Ž
+‹
+
+__unknown_file (
+idjava.lang.Long"__id*S
+
+__unknown_file (7*5-
++com.example.webshopba.service.KundenService"
+id*
+1* 
+1N[ N(u|
+z
+N[ N(z
+%3java.lang.String"__concat*(
+N[ N(u
+User not found with id: *"
+Nx N(z
+
+idjava.lang.Longlj
+NC N(Z1
+%4+jakarta.persistence.EntityNotFoundException"+jakarta.persistence.EntityNotFoundExceptionã
+à
+N? N({
+%5"Gjakarta.persistence.EntityNotFoundException#<init>(Ljava/lang/String;)V*O
+
+__unknown_file (3
+1
+%4+jakarta.persistence.EntityNotFoundException*4
+
+__unknown_file (
+
+%3java.lang.String"?
+N? N({3
+1
+%4+jakarta.persistence.EntityNotFoundExceptionB
+java.util.function.Supplier

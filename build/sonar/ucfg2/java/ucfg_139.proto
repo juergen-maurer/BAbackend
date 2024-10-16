@@ -1,0 +1,15 @@
+
+?com.example.webshopba.model.Cart#getCartItems()Ljava/util/List;c
+YC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/model/Cart.java (&"1*¬
+1 (y
+w
+ (
+%0java.util.List"__id*O
+
+__unknown_file (3*1"
+ com.example.webshopba.model.Cart"
+	cartItems""
+ (
+
+%0java.util.ListB$"
+ com.example.webshopba.model.CartH

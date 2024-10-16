@@ -1,0 +1,4 @@
+com.example.webshopba.controller.ProductController#getAllProducts()Ljava/util/List;
+b77f3a759e95b905996d1496917d4e06
+==
+getAllProducts com.example.webshopba.service.ProductService#getAllProducts()Ljava/util/List;

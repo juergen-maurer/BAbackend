@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.webshopba.controller.CartControllerTest" tests="5" skipped="0" failures="5" errors="0" timestamp="2024-09-17T08:53:32" hostname="DESKTOP-4FIJIRD" time="0.035">
+  <properties/>
+  <testcase name="testRemoveProductFromCart()" classname="com.example.webshopba.controller.CartControllerTest" time="0.024">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;com.example.webshopba.service.CartService.removeProductFromCart(java.lang.Long, java.lang.Long)&quot; because &quot;this.cartService&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;com.example.webshopba.service.CartService.removeProductFromCart(java.lang.Long, java.lang.Long)&quot; because &quot;this.cartService&quot; is null
+	at com.example.webshopba.controller.CartControllerTest.testRemoveProductFromCart(CartControllerTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="testUpdateProductInCart()" classname="com.example.webshopba.controller.CartControllerTest" time="0.001">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;com.example.webshopba.service.CartService.updateProductInCart(java.lang.Long, java.lang.Long, int)&quot; because &quot;this.cartService&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;com.example.webshopba.service.CartService.updateProductInCart(java.lang.Long, java.lang.Long, int)&quot; because &quot;this.cartService&quot; is null
+	at com.example.webshopba.controller.CartControllerTest.testUpdateProductInCart(CartControllerTest.java:96)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="testGetWarenkorb()" classname="com.example.webshopba.controller.CartControllerTest" time="0.002">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;com.example.webshopba.service.CartService.getWarenkorb(java.lang.Long)&quot; because &quot;this.cartService&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;com.example.webshopba.service.CartService.getWarenkorb(java.lang.Long)&quot; because &quot;this.cartService&quot; is null
+	at com.example.webshopba.controller.CartControllerTest.testGetWarenkorb(CartControllerTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="testClearCart()" classname="com.example.webshopba.controller.CartControllerTest" time="0.002">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;com.example.webshopba.service.CartService.clearCart(java.lang.Long)&quot; because &quot;this.cartService&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;com.example.webshopba.service.CartService.clearCart(java.lang.Long)&quot; because &quot;this.cartService&quot; is null
+	at com.example.webshopba.controller.CartControllerTest.testClearCart(CartControllerTest.java:65)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="testAddProductToCart()" classname="com.example.webshopba.controller.CartControllerTest" time="0.001">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;com.example.webshopba.service.CartService.addProductToCart(java.lang.Long, java.lang.Long, int)&quot; because &quot;this.cartService&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;com.example.webshopba.service.CartService.addProductToCart(java.lang.Long, java.lang.Long, int)&quot; because &quot;this.cartService&quot; is null
+	at com.example.webshopba.controller.CartControllerTest.testAddProductToCart(CartControllerTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

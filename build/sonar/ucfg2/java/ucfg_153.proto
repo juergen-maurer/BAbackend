@@ -1,0 +1,21 @@
+
+=com.example.webshopba.service.ProductService#countProducts()Jo
+eC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/service/ProductService.java# #("1*ê
+1$ $( ≤
+Ø
+$ $( 8
+%02com.example.webshopba.repository.ProductRepository"__id*c
+
+__unknown_file (G*E.
+,com.example.webshopba.service.ProductService"
+productRepository∑¥
+$ $((
+
+%1long";org.springframework.data.repository.CrudRepository#count()J*V
+
+__unknown_file (:
+8
+%02com.example.webshopba.repository.ProductRepository2count()"
+$ $()
+""B0.
+,com.example.webshopba.service.ProductServiceHX

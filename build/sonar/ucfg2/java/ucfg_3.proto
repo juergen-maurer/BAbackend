@@ -1,0 +1,118 @@
+
+‰com.example.webshopba.controller.ProductController#addProduct(Lcom/example/webshopba/model/Product;)Lcom/example/webshopba/model/Product;u
+kC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/controller/ProductController.java   ("startingBlock*þ	
+startingBlock   (;ˆ
+…
+
+__unknown_file (
+%2"__id*]
+
+__unknown_file (A*?
+.
+product#com.example.webshopba.model.Product"
+description…
+‚
+
+__unknown_file (
+%3"__id*Z
+
+__unknown_file (>*<
+.
+product#com.example.webshopba.model.Product"
+
+imageUrl€
+~
+
+__unknown_file (
+%4"__id*V
+
+__unknown_file (:*8
+.
+product#com.example.webshopba.model.Product"
+name˜
+•
+   (*
+%5"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*"
+
+__unknown_file (
+
+%3|
+z
+ 3  (:<
+.
+product#com.example.webshopba.model.Product"
+
+imageUrl"__annotation*"
+
+__unknown_file (
+
+%5˜
+•
+   (*
+%6"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*"
+
+__unknown_file (
+
+%4x
+v
+ 3  (:8
+.
+product#com.example.webshopba.model.Product"
+name"__annotation*"
+
+__unknown_file (
+
+%6˜
+•
+   (*
+%7"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*"
+
+__unknown_file (
+
+%2
+}
+ 3  (:?
+.
+product#com.example.webshopba.model.Product"
+description"__annotation*"
+
+__unknown_file (
+
+%7*
+1*Ž
+1! !(¯
+¬
+! !(2
+%0,com.example.webshopba.service.ProductService"__id*f
+
+__unknown_file (J*H4
+2com.example.webshopba.controller.ProductController"
+productService“
+! !(2)
+%1#com.example.webshopba.model.Product"„com.example.webshopba.service.ProductService#saveProduct(Lcom/example/webshopba/model/Product;)Lcom/example/webshopba/model/Product;*P
+
+__unknown_file (4
+2
+%0,com.example.webshopba.service.ProductService*L
+
+__unknown_file (0
+.
+product#com.example.webshopba.model.Product22saveProduct(Lcom/example/webshopba/model/Product;)"7
+! !(3+
+)
+%1#com.example.webshopba.model.Product::
+   (:.
+product#com.example.webshopba.model.ProductB64
+2com.example.webshopba.controller.ProductControllerH

@@ -1,0 +1,12 @@
+com.example.webshopba.service.KundenService#updateCustomerDetails(Lcom/example/webshopba/model/Kunden;)Lcom/example/webshopba/model/Kunden;
+1009d04b9fad9ead0217812546966215
+==
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;
+setLastName com.example.webshopba.model.Kunden#setLastName(Ljava/lang/String;)V
+setFirstName com.example.webshopba.model.Kunden#setFirstName(Ljava/lang/String;)V
+getId com.example.webshopba.model.Kunden#getId()Ljava/lang/Long;
+getFirstName com.example.webshopba.model.Kunden#getFirstName()Ljava/lang/String;
+getEmail com.example.webshopba.model.Kunden#getEmail()Ljava/lang/String;
+setEmail com.example.webshopba.model.Kunden#setEmail(Ljava/lang/String;)V
+findById com.example.webshopba.service.KundenService#findById(Ljava/lang/Long;)Lcom/example/webshopba/model/Kunden;
+getLastName com.example.webshopba.model.Kunden#getLastName()Ljava/lang/String;

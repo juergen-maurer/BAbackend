@@ -1,0 +1,5 @@
+com.example.webshopba.service.KundenService#findById(Ljava/lang/Long;)Lcom/example/webshopba/model/Kunden;
+8f3b02ce18da11d18581dfefcb5a71d9
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+==
+findById org.springframework.data.repository.CrudRepository#findById(Ljava/lang/Object;)Ljava/util/Optional;

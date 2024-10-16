@@ -1,0 +1,12 @@
+com.example.webshopba.service.CartService#updateProductInCart(Ljava/lang/Long;Ljava/lang/Long;I)Lcom/example/webshopba/model/Cart;
+2ac93b7ad7ff2b6f7118a37464bb8242
+java.util.Optional#isPresent()Z
+java.util.Optional#get()Ljava/lang/Object;
+==
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;
+setQuantity com.example.webshopba.model.CartItem#setQuantity(I)V
+getCartItems com.example.webshopba.model.Cart#getCartItems()Ljava/util/List;
+filter java.util.stream.Stream#filter(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+stream java.util.Collection#stream()Ljava/util/stream/Stream;
+getWarenkorb com.example.webshopba.service.CartService#getWarenkorb(Ljava/lang/Long;)Lcom/example/webshopba/model/Cart;
+findFirst java.util.stream.Stream#findFirst()Ljava/util/Optional;

@@ -1,0 +1,4 @@
+com.example.webshopba.service.ProductService#saveProduct(Lcom/example/webshopba/model/Product;)Lcom/example/webshopba/model/Product;
+cae2e991ff720641549704acaae4e4cd
+==
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;

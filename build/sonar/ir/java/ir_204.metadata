@@ -1,0 +1,9 @@
+com.example.webshopba.service.KundenService#changePassword(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;)Z
+5b20e753dbc9fdb94c2076eddc6d95c9
+==
+getPassword com.example.webshopba.model.Kunden#getPassword()Ljava/lang/String;
+matches org.springframework.security.crypto.password.PasswordEncoder#matches(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;
+encode org.springframework.security.crypto.password.PasswordEncoder#encode(Ljava/lang/CharSequence;)Ljava/lang/String;
+findById com.example.webshopba.service.KundenService#findById(Ljava/lang/Long;)Lcom/example/webshopba/model/Kunden;
+setPassword com.example.webshopba.model.Kunden#setPassword(Ljava/lang/String;)V

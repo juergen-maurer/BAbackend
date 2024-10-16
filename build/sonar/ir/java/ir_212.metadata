@@ -1,0 +1,7 @@
+com.example.webshopba.service.CartService#clearCart(Ljava/lang/Long;)Lcom/example/webshopba/model/Cart;
+33e69ed05b3d7c05c4e570eefb78f86b
+==
+deleteByCartId com.example.webshopba.repository.CartItemRepository#deleteByCartId(Ljava/lang/Long;)V
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;
+getWarenkorb com.example.webshopba.service.CartService#getWarenkorb(Ljava/lang/Long;)Lcom/example/webshopba/model/Cart;
+getId com.example.webshopba.model.Cart#getId()Ljava/lang/Long;

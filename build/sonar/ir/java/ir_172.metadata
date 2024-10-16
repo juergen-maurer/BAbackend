@@ -1,0 +1,5 @@
+com.example.webshopba.controller.KundenController#getUserById(Ljava/lang/Long;)Lorg/springframework/http/ResponseEntity;
+565c5b5e469d1af4409af725f7c1be72
+org.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
+==
+findById com.example.webshopba.service.KundenService#findById(Ljava/lang/Long;)Lcom/example/webshopba/model/Kunden;

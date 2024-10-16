@@ -1,0 +1,37 @@
+
+ccom.example.webshopba.controller.KundenController#logout()Lorg/springframework/http/ResponseEntity;t
+jC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/controller/KundenController.javaH  H(&"1*¡	
+1J J(ô
+ñ
+J J("9
+%03org.springframework.http.ResponseEntity$BodyBuilder"aorg.springframework.http.ResponseEntity#ok()Lorg/springframework/http/ResponseEntity$BodyBuilder;*G
+
+__unknown_file (+")
+'org.springframework.http.ResponseEntity—
+”
+J/ J(I(
+%1"org.springframework.http.MediaType"__id*X
+
+__unknown_file (<*:$
+"org.springframework.http.MediaType"
+APPLICATION_JSON¹¶
+J J(J9
+%23org.springframework.http.ResponseEntity$BodyBuilder"šorg.springframework.http.ResponseEntity$BodyBuilder#contentType(Lorg/springframework/http/MediaType;)Lorg/springframework/http/ResponseEntity$BodyBuilder;*W
+
+__unknown_file (;
+9
+%03org.springframework.http.ResponseEntity$BodyBuilder*F
+
+__unknown_file (*
+(
+%1"org.springframework.http.MediaType21contentType(Lorg/springframework/http/MediaType;)‡„
+J J(R-
+%3'org.springframework.http.ResponseEntity"gorg.springframework.http.ResponseEntity$HeadersBuilder#build()Lorg/springframework/http/ResponseEntity;*W
+
+__unknown_file (;
+9
+%23org.springframework.http.ResponseEntity$BodyBuilder2build()";
+J J(S/
+-
+%3'org.springframework.http.ResponseEntityB53
+1com.example.webshopba.controller.KundenControllerH

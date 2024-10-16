@@ -1,0 +1,10 @@
+com.example.webshopba.service.KundenService#authenticateUser(Ljava/lang/String;Ljava/lang/String;)Lcom/example/webshopba/model/Kunden;
+7ef25461bc5d91bca5e9abc45641cb03
+jakarta.persistence.EntityNotFoundException#<init>(Ljava/lang/String;)V
+com.example.webshopba.service.KundenService#findByEmail(Ljava/lang/String;)Lcom/example/webshopba/model/Kunden;
+java.lang.IllegalArgumentException#<init>(Ljava/lang/String;)V
+java.lang.IllegalArgumentException#instance-init#
+jakarta.persistence.EntityNotFoundException#instance-init#
+==
+getPassword com.example.webshopba.model.Kunden#getPassword()Ljava/lang/String;
+matches org.springframework.security.crypto.password.PasswordEncoder#matches(Ljava/lang/CharSequence;Ljava/lang/String;)Z

@@ -1,0 +1,27 @@
+
+Åcom.example.webshopba.service.ProductService#getProductsByCategory(Lcom/example/webshopba/enums/ProductCategory;)Ljava/util/List;o
+eC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/service/ProductService.java' '(."1*˝
+1( (( ≤
+Ø
+( (( 8
+%02com.example.webshopba.repository.ProductRepository"__id*c
+
+__unknown_file (G*E.
+,com.example.webshopba.service.ProductService"
+productRepositoryîë
+( ((9
+%1java.util.List"Äcom.example.webshopba.repository.ProductRepository#findByCategory(Lcom/example/webshopba/enums/ProductCategory;)Ljava/util/List;*V
+
+__unknown_file (:
+8
+%02com.example.webshopba.repository.ProductRepository*U
+
+__unknown_file (9
+7
+category+com.example.webshopba.enums.ProductCategory2=findByCategory(Lcom/example/webshopba/enums/ProductCategory;)""
+( ((:
+
+%1java.util.List:C
+'/ '(G7
+category+com.example.webshopba.enums.ProductCategoryB0.
+,com.example.webshopba.service.ProductServiceH

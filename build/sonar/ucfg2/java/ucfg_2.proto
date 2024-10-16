@@ -1,0 +1,27 @@
+
+xcom.example.webshopba.controller.ProductController#getProductById(Ljava/lang/Long;)Lcom/example/webshopba/model/Product;u
+kC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/controller/ProductController.java (!"1*Ï
+1 (¯
+¬
+ (2
+%0,com.example.webshopba.service.ProductService"__id*f
+
+__unknown_file (J*H4
+2com.example.webshopba.controller.ProductController"
+productServiceÔÑ
+ (0)
+%1#com.example.webshopba.model.Product"rcom.example.webshopba.service.ProductService#getProductById(Ljava/lang/Long;)Lcom/example/webshopba/model/Product;*P
+
+__unknown_file (4
+2
+%0,com.example.webshopba.service.ProductService*2
+
+__unknown_file (
+
+idjava.lang.Long2 getProductById(Ljava/lang/Long;)"7
+ (1+
+)
+%1#com.example.webshopba.model.Product: 
+" (7
+idjava.lang.LongB64
+2com.example.webshopba.controller.ProductControllerH

@@ -1,0 +1,15 @@
+
+Acom.example.webshopba.OrderRequest#getCartItems()Ljava/util/List;e
+[C:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/OrderRequest.java (&"1*®
+1 ({
+y
+ (
+%0java.util.List"__id*Q
+
+__unknown_file (5*3$
+"com.example.webshopba.OrderRequest"
+	cartItems""
+ (
+
+%0java.util.ListB&$
+"com.example.webshopba.OrderRequestH

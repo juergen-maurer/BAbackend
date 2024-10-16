@@ -1,0 +1,4 @@
+com.example.webshopba.service.ProductService#deleteProduct(Ljava/lang/Long;)V
+42ad5f7f301afed910336de356077ccd
+==
+deleteById org.springframework.data.repository.CrudRepository#deleteById(Ljava/lang/Object;)V

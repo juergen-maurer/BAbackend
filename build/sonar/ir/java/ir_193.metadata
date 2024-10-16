@@ -1,0 +1,4 @@
+com.example.webshopba.service.ProductService#getProductsByCategory(Lcom/example/webshopba/enums/ProductCategory;)Ljava/util/List;
+a2d79c9f846703fa9a6bca4ee60c96ab
+==
+findByCategory com.example.webshopba.repository.ProductRepository#findByCategory(Lcom/example/webshopba/enums/ProductCategory;)Ljava/util/List;

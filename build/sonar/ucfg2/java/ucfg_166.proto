@@ -1,0 +1,53 @@
+
+jcom.example.webshopba.service.KundenService#findById(Ljava/lang/Long;)Lcom/example/webshopba/model/Kunden;n
+dC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/service/KundenService.javaM M("1*‡	
+1N N(¯
+¬
+N N(7
+%01com.example.webshopba.repository.KundenRepository"__id*a
+
+__unknown_file (E*C-
++com.example.webshopba.service.KundenService"
+kundenRepositoryµ²
+N N(,
+%1java.util.Optional"corg.springframework.data.repository.CrudRepository#findById(Ljava/lang/Object;)Ljava/util/Optional;*U
+
+__unknown_file (9
+7
+%01com.example.webshopba.repository.KundenRepository*2
+
+__unknown_file (
+
+idjava.lang.Long2findById(Ljava/lang/Object;)¡
+ž
+N9 N({!
+%2java.util.function.Supplier"__declareFunction*\
+
+__unknown_file (@>
+<__sonar_lambda_3$com.example.webshopba.service.KundenService
+
+
+__unknown_file ()
+!
+%2java.util.function.Supplier"
+id"__id*2
+
+__unknown_file (
+
+idjava.lang.Long­ª
+N N(|(
+%6"com.example.webshopba.model.Kunden"Ojava.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;*6
+
+__unknown_file (
+
+%1java.util.Optional*?
+
+__unknown_file (#
+!
+%2java.util.function.Supplier2*orElseThrow(Ljava/util/function/Supplier;)"6
+N N(}*
+(
+%6"com.example.webshopba.model.Kunden: 
+M M("
+idjava.lang.LongB/-
++com.example.webshopba.service.KundenServiceH

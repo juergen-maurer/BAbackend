@@ -1,0 +1,4 @@
+com.example.webshopba.controller.ProductController#deleteProduct(Ljava/lang/Long;)V
+8b05aef5da5ec9e6ccce799a29aad0d5
+==
+deleteProduct com.example.webshopba.service.ProductService#deleteProduct(Ljava/lang/Long;)V

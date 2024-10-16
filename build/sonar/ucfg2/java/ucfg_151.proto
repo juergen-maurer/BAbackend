@@ -1,0 +1,27 @@
+
+„com.example.webshopba.service.ProductService#saveProduct(Lcom/example/webshopba/model/Product;)Lcom/example/webshopba/model/Product;o
+eC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/service/ProductService.java ("1*Õ
+1 ( ²
+¯
+ ( 8
+%02com.example.webshopba.repository.ProductRepository"__id*c
+
+__unknown_file (G*E.
+,com.example.webshopba.service.ProductService"
+productRepository×Ô
+ (.)
+%1#com.example.webshopba.model.Product"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*V
+
+__unknown_file (:
+8
+%02com.example.webshopba.repository.ProductRepository*L
+
+__unknown_file (0
+.
+product#com.example.webshopba.model.Product2save(Ljava/lang/Object;)"7
+ (/+
+)
+%1#com.example.webshopba.model.Product::
+ (..
+product#com.example.webshopba.model.ProductB0.
+,com.example.webshopba.service.ProductServiceH

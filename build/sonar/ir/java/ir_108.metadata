@@ -1,0 +1,4 @@
+com.example.webshopba.model.Kunden#getWarenkorbId()Ljava/lang/Long;
+c8bf4ae7d6dea1ee4ac747fea85d9a53
+==
+getId com.example.webshopba.model.Cart#getId()Ljava/lang/Long;

@@ -1,0 +1,5 @@
+com.example.webshopba.service.KundenService#findByEmail(Ljava/lang/String;)Lcom/example/webshopba/model/Kunden;
+1a1d1c6b3e03a04dfb2d111ab48b118f
+java.util.Optional#orElse(Ljava/lang/Object;)Ljava/lang/Object;
+==
+findByEmail com.example.webshopba.repository.KundenRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;

@@ -1,0 +1,21 @@
+
+Ccom.example.webshopba.model.Kunden#getWarenkorbId()Ljava/lang/Long;e
+[C:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/model/Kunden.javaD D("1*ñ
+1E E(Ž
+‹
+E E(&
+%0 com.example.webshopba.model.Cart"__id*Q
+
+__unknown_file (5*3$
+"com.example.webshopba.model.Kunden"
+	warenkorb¬©
+E E( 
+%1java.lang.Long"8com.example.webshopba.model.Cart#getId()Ljava/lang/Long;*D
+
+__unknown_file ((
+&
+%0 com.example.webshopba.model.Cart2getId()""
+E E(!
+
+%1java.lang.LongB&$
+"com.example.webshopba.model.KundenH

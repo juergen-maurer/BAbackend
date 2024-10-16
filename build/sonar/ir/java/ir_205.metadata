@@ -1,0 +1,7 @@
+com.example.webshopba.service.KundenService#checkPassword(Lcom/example/webshopba/model/Kunden;Ljava/lang/String;)Z
+cddea16c33bd4af8ed26d9f94a7ce6b5
+==
+getPassword com.example.webshopba.model.Kunden#getPassword()Ljava/lang/String;
+matches org.springframework.security.crypto.password.PasswordEncoder#matches(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+getId com.example.webshopba.model.Kunden#getId()Ljava/lang/Long;
+findById com.example.webshopba.service.KundenService#findById(Ljava/lang/Long;)Lcom/example/webshopba/model/Kunden;

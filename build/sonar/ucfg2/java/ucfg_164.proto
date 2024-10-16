@@ -1,0 +1,36 @@
+
+ocom.example.webshopba.service.KundenService#findByEmail(Ljava/lang/String;)Lcom/example/webshopba/model/Kunden;n
+dC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/service/KundenService.javaJ J("1*¬
+1K K(¯
+¬
+K K(7
+%01com.example.webshopba.repository.KundenRepository"__id*a
+
+__unknown_file (E*C-
++com.example.webshopba.service.KundenService"
+kundenRepository¿¼
+K K(2
+%1java.util.Optional"ecom.example.webshopba.repository.KundenRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;*U
+
+__unknown_file (9
+7
+%01com.example.webshopba.repository.KundenRepository*7
+
+__unknown_file (
+
+emailjava.lang.String2findByEmail(Ljava/lang/String;)ðí
+K K(?(
+%2"com.example.webshopba.model.Kunden"?java.util.Optional#orElse(Ljava/lang/Object;)Ljava/lang/Object;*6
+
+__unknown_file (
+
+%1java.util.Optional*"
+
+__unknown_file (
+""2orElse(Ljava/lang/Object;)"6
+K K(@*
+(
+%2"com.example.webshopba.model.Kunden:%
+J J(+
+emailjava.lang.StringB/-
++com.example.webshopba.service.KundenService

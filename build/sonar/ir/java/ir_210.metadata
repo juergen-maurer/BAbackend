@@ -1,0 +1,19 @@
+com.example.webshopba.service.CartService#addProductToCart(Ljava/lang/Long;Ljava/lang/Long;I)Lcom/example/webshopba/model/Cart;
+28a7a47af0c39e65a83f7d901694070f
+java.util.Optional#isPresent()Z
+com.example.webshopba.model.CartItem#<init>()V
+com.example.webshopba.model.CartItem#instance-init#
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+java.util.Optional#get()Ljava/lang/Object;
+==
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;
+findById org.springframework.data.repository.CrudRepository#findById(Ljava/lang/Object;)Ljava/util/Optional;
+getQuantity com.example.webshopba.model.CartItem#getQuantity()I
+setQuantity com.example.webshopba.model.CartItem#setQuantity(I)V
+getCartItems com.example.webshopba.model.Cart#getCartItems()Ljava/util/List;
+add java.util.List#add(Ljava/lang/Object;)Z
+findByCartIdAndProductId com.example.webshopba.repository.CartItemRepository#findByCartIdAndProductId(Ljava/lang/Long;Ljava/lang/Long;)Ljava/util/Optional;
+getWarenkorb com.example.webshopba.service.CartService#getWarenkorb(Ljava/lang/Long;)Lcom/example/webshopba/model/Cart;
+setCart com.example.webshopba.model.CartItem#setCart(Lcom/example/webshopba/model/Cart;)V
+setProduct com.example.webshopba.model.CartItem#setProduct(Lcom/example/webshopba/model/Product;)V
+getId com.example.webshopba.model.Cart#getId()Ljava/lang/Long;

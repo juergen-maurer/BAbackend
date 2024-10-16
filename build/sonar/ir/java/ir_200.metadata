@@ -1,0 +1,5 @@
+com.example.webshopba.service.KundenService#emailExists(Ljava/lang/String;)Z
+cfeeeebcce078ec7ba31db6c537a85fd
+java.util.Optional#isPresent()Z
+==
+findByEmail com.example.webshopba.repository.KundenRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;

@@ -1,0 +1,6 @@
+com.example.webshopba.controller.KundenController#logout()Lorg/springframework/http/ResponseEntity;
+6eb6fe23368cfdd6db15ce359caa86f9
+org.springframework.http.ResponseEntity#ok()Lorg/springframework/http/ResponseEntity$BodyBuilder;
+==
+contentType org.springframework.http.ResponseEntity$BodyBuilder#contentType(Lorg/springframework/http/MediaType;)Lorg/springframework/http/ResponseEntity$BodyBuilder;
+build org.springframework.http.ResponseEntity$HeadersBuilder#build()Lorg/springframework/http/ResponseEntity;

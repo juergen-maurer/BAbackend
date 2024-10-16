@@ -1,0 +1,4 @@
+com.example.webshopba.controller.ProductController#getProductById(Ljava/lang/Long;)Lcom/example/webshopba/model/Product;
+9d3f12b1aad0ef86a90f7fcd9e7a0b63
+==
+getProductById com.example.webshopba.service.ProductService#getProductById(Ljava/lang/Long;)Lcom/example/webshopba/model/Product;

@@ -1,0 +1,21 @@
+
+Scom.example.webshopba.controller.ProductController#getAllProducts()Ljava/util/List;u
+kC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/controller/ProductController.java ('"1*¼
+1 (¯
+¬
+ (2
+%0,com.example.webshopba.service.ProductService"__id*f
+
+__unknown_file (J*H4
+2com.example.webshopba.controller.ProductController"
+productServiceÖÓ
+ (.
+%1java.util.List"Mcom.example.webshopba.service.ProductService#getAllProducts()Ljava/util/List;*P
+
+__unknown_file (4
+2
+%0,com.example.webshopba.service.ProductService2getAllProducts()""
+ (/
+
+%1java.util.ListB64
+2com.example.webshopba.controller.ProductControllerH

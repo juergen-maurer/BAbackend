@@ -1,0 +1,15 @@
+
+dcom.example.webshopba.model.Bestellung#getPaymentMethod()Lcom/example/webshopba/enums/PaymentMethod;i
+_C:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/model/Bestellung.java4 4()"1*î
+15 5(Ÿ
+œ
+5 5(/
+%0)com.example.webshopba.enums.PaymentMethod"__id*Y
+
+__unknown_file (=*;(
+&com.example.webshopba.model.Bestellung"
+paymentMethod"=
+5 5(1
+/
+%0)com.example.webshopba.enums.PaymentMethodB*(
+&com.example.webshopba.model.BestellungH

@@ -1,0 +1,18 @@
+com.example.webshopba.controller.KundenController#register(Lcom/example/webshopba/model/Kunden;)Lorg/springframework/http/ResponseEntity;
+ba8f30fd6c01226a2252ad0d255d6f6d
+org.springframework.http.ResponseEntity#ok()Lorg/springframework/http/ResponseEntity$BodyBuilder;
+java.util.HashMap#<init>()V
+java.lang.Long#toString()Ljava/lang/String;
+java.util.HashMap#instance-init#
+org.springframework.http.ResponseEntity#status(Lorg/springframework/http/HttpStatusCode;)Lorg/springframework/http/ResponseEntity$BodyBuilder;
+==
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+contentType org.springframework.http.ResponseEntity$BodyBuilder#contentType(Lorg/springframework/http/MediaType;)Lorg/springframework/http/ResponseEntity$BodyBuilder;
+body org.springframework.http.ResponseEntity$BodyBuilder#body(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
+registerNewUserAccount com.example.webshopba.service.KundenService#registerNewUserAccount(Lcom/example/webshopba/model/Kunden;)Lcom/example/webshopba/model/Kunden;
+getWarenkorbId com.example.webshopba.model.Kunden#getWarenkorbId()Ljava/lang/Long;
+emailExists com.example.webshopba.service.KundenService#emailExists(Ljava/lang/String;)Z
+getId com.example.webshopba.model.Kunden#getId()Ljava/lang/Long;
+getFirstName com.example.webshopba.model.Kunden#getFirstName()Ljava/lang/String;
+getEmail com.example.webshopba.model.Kunden#getEmail()Ljava/lang/String;
+getLastName com.example.webshopba.model.Kunden#getLastName()Ljava/lang/String;

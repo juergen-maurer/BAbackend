@@ -1,0 +1,20 @@
+
+=__sonar_lambda_2$com.example.webshopba.service.ProductServiceo
+eC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/service/ProductService.java: (i"1*Ê
+1U (hJH
+D (T 
+%3java.lang.RuntimeException"java.lang.RuntimeException¾
+»
+@ (i
+%4"6java.lang.RuntimeException#<init>(Ljava/lang/String;)V*>
+
+__unknown_file ("
+ 
+%3java.lang.RuntimeException*1
+
+__unknown_file (
+Product not found".
+@ (i"
+ 
+%3java.lang.RuntimeExceptionB
+java.util.function.Supplier

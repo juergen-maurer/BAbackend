@@ -1,0 +1,101 @@
+
+‹com.example.webshopba.service.KundenService#updateCustomerDetails(Lcom/example/webshopba/model/Kunden;)Lcom/example/webshopba/model/Kunden;n
+dC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/service/KundenService.java2 2('"1*ð
+13  3((»¸
+3) 3(>
+%0java.lang.Long":com.example.webshopba.model.Kunden#getId()Ljava/lang/Long;*Q
+
+__unknown_file (5
+3
+updatedKunden"com.example.webshopba.model.Kunden2getId()À½
+3  3(?(
+%1"com.example.webshopba.model.Kunden"jcom.example.webshopba.service.KundenService#findById(Ljava/lang/Long;)Lcom/example/webshopba/model/Kunden;*K
+
+__unknown_file (/-
++com.example.webshopba.service.KundenService*2
+
+__unknown_file (
+
+%0java.lang.Long2findById(Ljava/lang/Long;)‘
+Ž
+3 3(@4
+existingKunden"com.example.webshopba.model.Kunden"__id*F
+
+__unknown_file (*
+(
+%1"com.example.webshopba.model.KundenÍÊ
+4( 4(D
+%2java.lang.String"Ccom.example.webshopba.model.Kunden#getFirstName()Ljava/lang/String;*Q
+
+__unknown_file (5
+3
+updatedKunden"com.example.webshopba.model.Kunden2getFirstName()‹ˆ
+4 4(E
+
+%3void"Dcom.example.webshopba.model.Kunden#setFirstName(Ljava/lang/String;)V*R
+
+__unknown_file (6
+4
+existingKunden"com.example.webshopba.model.Kunden*4
+
+__unknown_file (
+
+%2java.lang.String2 setFirstName(Ljava/lang/String;)ËÈ
+5' 5(B
+%4java.lang.String"Bcom.example.webshopba.model.Kunden#getLastName()Ljava/lang/String;*Q
+
+__unknown_file (5
+3
+updatedKunden"com.example.webshopba.model.Kunden2getLastName()‰†
+5 5(C
+
+%5void"Ccom.example.webshopba.model.Kunden#setLastName(Ljava/lang/String;)V*R
+
+__unknown_file (6
+4
+existingKunden"com.example.webshopba.model.Kunden*4
+
+__unknown_file (
+
+%4java.lang.String2setLastName(Ljava/lang/String;)ÅÂ
+6$ 6(<
+%6java.lang.String"?com.example.webshopba.model.Kunden#getEmail()Ljava/lang/String;*Q
+
+__unknown_file (5
+3
+updatedKunden"com.example.webshopba.model.Kunden2
+getEmail()ƒ€
+6 6(=
+
+%7void"@com.example.webshopba.model.Kunden#setEmail(Ljava/lang/String;)V*R
+
+__unknown_file (6
+4
+existingKunden"com.example.webshopba.model.Kunden*4
+
+__unknown_file (
+
+%6java.lang.String2setEmail(Ljava/lang/String;)¯
+¬
+9 9(7
+%81com.example.webshopba.repository.KundenRepository"__id*a
+
+__unknown_file (E*C-
++com.example.webshopba.service.KundenService"
+kundenRepositoryÛØ
+9 9(4(
+%9"com.example.webshopba.model.Kunden"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*U
+
+__unknown_file (9
+7
+%81com.example.webshopba.repository.KundenRepository*R
+
+__unknown_file (6
+4
+existingKunden"com.example.webshopba.model.Kunden2save(Ljava/lang/Object;)"6
+9 9(5*
+(
+%9"com.example.webshopba.model.Kunden:?
+2) 2(=3
+updatedKunden"com.example.webshopba.model.KundenB/-
++com.example.webshopba.service.KundenServiceH

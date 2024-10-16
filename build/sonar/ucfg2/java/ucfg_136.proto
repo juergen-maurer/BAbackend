@@ -1,0 +1,143 @@
+
+tcom.example.webshopba.controller.KundenController#getUser(Ljava/lang/Long;)Lorg/springframework/http/ResponseEntity;t
+jC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/controller/KundenController.javaT* T(1"13*ä
+13V V()¨
+©
+V V()1
+%0+com.example.webshopba.service.KundenService"__id*d
+
+__unknown_file (H*F3
+1com.example.webshopba.controller.KundenController"
+kundenServiceƒ¡
+V V(6(
+%1"com.example.webshopba.model.Kunden"jcom.example.webshopba.service.KundenService#findById(Ljava/lang/Long;)Lcom/example/webshopba/model/Kunden;*O
+
+__unknown_file (3
+1
+%0+com.example.webshopba.service.KundenService*2
+
+__unknown_file (
+
+idjava.lang.Long2findById(Ljava/lang/Long;)*
+12*K
+4X X(/"<
+X X(/0
+.
+%10'org.springframework.http.ResponseEntity*Ë
+5	W W(¿ê
+ç
+	W W(¿0
+response$com.example.webshopba.KundenResponse"__id*H
+
+__unknown_file (,
+*
+%8$com.example.webshopba.KundenResponseø
+º
+X X(..
+%10'org.springframework.http.ResponseEntity"gorg.springframework.http.ResponseEntity#ok(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;*G
+
+__unknown_file (+")
+'org.springframework.http.ResponseEntity*N
+
+__unknown_file (2
+0
+response$com.example.webshopba.KundenResponse*
+4*”
+6	W& W(ø^\
+W* W(8*
+%8$com.example.webshopba.KundenResponse"$com.example.webshopba.KundenResponse›
+⁄
+	W& W(ø
+%9"©com.example.webshopba.KundenResponse#<init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/example/webshopba/model/Address;Ljava/util/List;)V*H
+
+__unknown_file (,
+*
+%8$com.example.webshopba.KundenResponse*2
+
+__unknown_file (
+
+%2java.lang.Long*4
+
+__unknown_file (
+
+%3java.lang.String*4
+
+__unknown_file (
+
+%4java.lang.String*4
+
+__unknown_file (
+
+%5java.lang.String*G
+
+__unknown_file (+
+)
+%6#com.example.webshopba.model.Address*2
+
+__unknown_file (
+
+%7java.util.List*
+5*·
+7
+W¶ W(¨ «
+
+W¶ W(æ
+%7java.util.List"Dcom.example.webshopba.model.Kunden#getBestellungen()Ljava/util/List;*J
+
+__unknown_file (.
+,
+kunden"com.example.webshopba.model.Kunden2getBestellungen()*
+6*ë
+8
+Wâ W(è˙˜
+
+Wâ W(§)
+%6#com.example.webshopba.model.Address"\com.example.webshopba.model.Kunden#getLastUsedAddress()Lcom/example/webshopba/model/Address;*J
+
+__unknown_file (.
+,
+kunden"com.example.webshopba.model.Kunden2getLastUsedAddress()*
+7*⁄
+9Ws W(y≈¬
+	Ws W(á
+%5java.lang.String"Bcom.example.webshopba.model.Kunden#getLastName()Ljava/lang/String;*J
+
+__unknown_file (.
+,
+kunden"com.example.webshopba.model.Kunden2getLastName()*
+8*‹
+10W\ W(b∆√
+W\ W(q
+%4java.lang.String"Ccom.example.webshopba.model.Kunden#getFirstName()Ljava/lang/String;*J
+
+__unknown_file (.
+,
+kunden"com.example.webshopba.model.Kunden2getFirstName()*
+9*’
+11WI W(Oæª
+WI W(Z
+%3java.lang.String"?com.example.webshopba.model.Kunden#getEmail()Ljava/lang/String;*J
+
+__unknown_file (.
+,
+kunden"com.example.webshopba.model.Kunden2
+getEmail()*
+10*◊
+12V V(7â
+Ü
+V V(7,
+kunden"com.example.webshopba.model.Kunden"__id*F
+
+__unknown_file (*
+(
+%1"com.example.webshopba.model.Kunden¥±
+W9 W(G
+%2java.lang.Long":com.example.webshopba.model.Kunden#getId()Ljava/lang/Long;*J
+
+__unknown_file (.
+,
+kunden"com.example.webshopba.model.Kunden2getId()*
+11: 
+T2 T(G
+idjava.lang.LongB53
+1com.example.webshopba.controller.KundenControllerH

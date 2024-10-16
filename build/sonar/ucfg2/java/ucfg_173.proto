@@ -1,0 +1,42 @@
+
+:__sonar_lambda_6$com.example.webshopba.service.CartServicel
+bC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/service/CartService.javaE E(K"startingBlock*»
+startingBlockE E(Kš
+—
+
+__unknown_file (
+	productIdjava.lang.Long"__id*X
+
+__unknown_file (<*:+
+)com.example.webshopba.service.CartService"
+	productId*
+1*¢
+1E  E($êç
+E  E(1)
+%4#com.example.webshopba.model.Product"Vcom.example.webshopba.model.CartItem#getProduct()Lcom/example/webshopba/model/Product;*J
+
+__unknown_file (.
+,
+item$com.example.webshopba.model.CartItem2getProduct()²¯
+E  E(9
+%5java.lang.Long";com.example.webshopba.model.Product#getId()Ljava/lang/Long;*G
+
+__unknown_file (+
+)
+%4#com.example.webshopba.model.Product2getId()ÓÐ
+E  E(K
+%6boolean"*java.lang.Long#equals(Ljava/lang/Object;)Z*2
+
+__unknown_file (
+
+%5java.lang.Long*9
+
+__unknown_file (
+
+	productIdjava.lang.Long2equals(Ljava/lang/Object;)"
+E  E(K
+
+%6boolean:8
+E E(,
+item$com.example.webshopba.model.CartItemB 
+java.util.function.Predicate

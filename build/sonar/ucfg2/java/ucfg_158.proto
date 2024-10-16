@@ -1,0 +1,32 @@
+
+Lcom.example.webshopba.service.KundenService#emailExists(Ljava/lang/String;)Zn
+dC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/service/KundenService.java ("1*™
+1   (¯
+¬
+   (7
+%01com.example.webshopba.repository.KundenRepository"__id*a
+
+__unknown_file (E*C-
++com.example.webshopba.service.KundenService"
+kundenRepository¿¼
+   (2
+%1java.util.Optional"ecom.example.webshopba.repository.KundenRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;*U
+
+__unknown_file (9
+7
+%01com.example.webshopba.repository.KundenRepository*7
+
+__unknown_file (
+
+emailjava.lang.String2findByEmail(Ljava/lang/String;)
+   (>
+%2boolean"java.util.Optional#isPresent()Z*6
+
+__unknown_file (
+
+%1java.util.Optional2isPresent()"
+   (?
+"":%
+ (+
+emailjava.lang.StringB/-
++com.example.webshopba.service.KundenServiceHX

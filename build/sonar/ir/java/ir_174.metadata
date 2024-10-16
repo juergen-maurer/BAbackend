@@ -1,0 +1,13 @@
+com.example.webshopba.controller.KundenController#changePassword(Ljava/lang/Long;Lcom/example/webshopba/ChangePasswordRequest;)Lorg/springframework/http/ResponseEntity;
+eda23b8c7d337ee1dfdc22850e6333e6
+org.springframework.http.ResponseEntity#ok()Lorg/springframework/http/ResponseEntity$BodyBuilder;
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+org.springframework.http.ResponseEntity#status(Lorg/springframework/http/HttpStatusCode;)Lorg/springframework/http/ResponseEntity$BodyBuilder;
+==
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+contentType org.springframework.http.ResponseEntity$BodyBuilder#contentType(Lorg/springframework/http/MediaType;)Lorg/springframework/http/ResponseEntity$BodyBuilder;
+getOldPassword com.example.webshopba.ChangePasswordRequest#getOldPassword()Ljava/lang/String;
+changePassword com.example.webshopba.service.KundenService#changePassword(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;)Z
+body org.springframework.http.ResponseEntity$BodyBuilder#body(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;
+getNewPassword com.example.webshopba.ChangePasswordRequest#getNewPassword()Ljava/lang/String;

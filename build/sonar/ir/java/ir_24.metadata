@@ -1,0 +1,39 @@
+com.example.webshopba.service.OrderService#processOrder(Lcom/example/webshopba/OrderRequest;)Lcom/example/webshopba/OrderResponse;
+afc63d9cc51dc9c7e32dc398695140cc
+java.util.stream.Collectors#toList()Ljava/util/stream/Collector;
+com.example.webshopba.model.BestellungsCart#instance-init#
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+com.example.webshopba.OrderResponse#instance-init#
+java.lang.Long#toString()Ljava/lang/String;
+com.example.webshopba.OrderResponse#<init>()V
+com.example.webshopba.model.Bestellung#instance-init#
+com.example.webshopba.model.BestellungsCart#<init>()V
+com.example.webshopba.model.Bestellung#<init>()V
+==
+setBestellung com.example.webshopba.model.BestellungsCart#setBestellung(Lcom/example/webshopba/model/Bestellung;)V
+println java.io.PrintStream#println(Ljava/lang/Object;)V
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;
+getTotal com.example.webshopba.OrderRequest#getTotal()D
+setMessage com.example.webshopba.OrderResponse#setMessage(Ljava/lang/String;)V
+findById com.example.webshopba.repository.CartRepository#findById(Ljava/lang/Long;)Ljava/util/Optional;
+setOrderId com.example.webshopba.OrderResponse#setOrderId(Ljava/lang/String;)V
+getWarenkorbId com.example.webshopba.OrderRequest#getWarenkorbId()Ljava/lang/Long;
+deleteByCartId com.example.webshopba.repository.CartItemRepository#deleteByCartId(Ljava/lang/Long;)V
+collect java.util.stream.Stream#collect(Ljava/util/stream/Collector;)Ljava/lang/Object;
+getAddress com.example.webshopba.OrderRequest#getAddress()Lcom/example/webshopba/model/Address;
+getId com.example.webshopba.model.Bestellung#getId()Ljava/lang/Long;
+getPaymentMethod com.example.webshopba.OrderRequest#getPaymentMethod()Lcom/example/webshopba/enums/PaymentMethod;
+setPaymentMethod com.example.webshopba.model.Bestellung#setPaymentMethod(Lcom/example/webshopba/enums/PaymentMethod;)V
+getCartItems com.example.webshopba.model.Cart#getCartItems()Ljava/util/List;
+setLastUsedAddress com.example.webshopba.model.Kunden#setLastUsedAddress(Lcom/example/webshopba/model/Address;)V
+map java.util.stream.Stream#map(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+setBestellungsCart com.example.webshopba.model.Bestellung#setBestellungsCart(Lcom/example/webshopba/model/BestellungsCart;)V
+setStatus com.example.webshopba.OrderResponse#setStatus(Ljava/lang/String;)V
+findByWarenkorb com.example.webshopba.repository.KundenRepository#findByWarenkorb(Lcom/example/webshopba/model/Cart;)Lcom/example/webshopba/model/Kunden;
+getId com.example.webshopba.model.Cart#getId()Ljava/lang/Long;
+processPayment com.example.webshopba.service.OrderService#processPayment(Lcom/example/webshopba/enums/PaymentMethod;)Z
+setKunde com.example.webshopba.model.Bestellung#setKunde(Lcom/example/webshopba/model/Kunden;)V
+setAddress com.example.webshopba.model.Bestellung#setAddress(Lcom/example/webshopba/model/Address;)V
+stream java.util.Collection#stream()Ljava/util/stream/Stream;
+setBestellungsCartItems com.example.webshopba.model.BestellungsCart#setBestellungsCartItems(Ljava/util/List;)V
+setTotal com.example.webshopba.model.Bestellung#setTotal(D)V

@@ -1,0 +1,4 @@
+com.example.webshopba.controller.ProductController#addProduct(Lcom/example/webshopba/model/Product;)Lcom/example/webshopba/model/Product;
+93b006001751c58bd9f6850bd319f9fd
+==
+saveProduct com.example.webshopba.service.ProductService#saveProduct(Lcom/example/webshopba/model/Product;)Lcom/example/webshopba/model/Product;

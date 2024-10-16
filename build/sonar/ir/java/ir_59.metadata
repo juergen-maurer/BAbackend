@@ -1,0 +1,4 @@
+com.example.webshopba.controller.OrderController#processCheckout(Lcom/example/webshopba/OrderRequest;)Lcom/example/webshopba/OrderResponse;
+ca11158139be95fdf01e47727f3b42b7
+==
+processOrder com.example.webshopba.service.OrderService#processOrder(Lcom/example/webshopba/OrderRequest;)Lcom/example/webshopba/OrderResponse;

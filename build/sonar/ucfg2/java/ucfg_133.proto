@@ -1,0 +1,496 @@
+
+‰com.example.webshopba.controller.KundenController#register(Lcom/example/webshopba/model/Kunden;)Lorg/springframework/http/ResponseEntity;t
+jC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/controller/KundenController.java6/ 6(7"startingBlock*¥
+2: :(Í
+Ê
+: :(A
+%5java.lang.String"__mapSet*7
+
+__unknown_file (
+
+responsejava.util.Map*%
+
+__unknown_file (	
+error*<
+
+__unknown_file ( 
+Email address already in usea
+_
+;) ;(<)
+%6#org.springframework.http.HttpStatus"__id*"
+
+__unknown_file (
+""ë
+è
+; ;(=9
+%73org.springframework.http.ResponseEntity$BodyBuilder"Žorg.springframework.http.ResponseEntity#status(Lorg/springframework/http/HttpStatusCode;)Lorg/springframework/http/ResponseEntity$BodyBuilder;*G
+
+__unknown_file (+")
+'org.springframework.http.ResponseEntity*G
+
+__unknown_file (+
+)
+%6#org.springframework.http.HttpStatus—
+”
+;J ;(d(
+%8"org.springframework.http.MediaType"__id*X
+
+__unknown_file (<*:$
+"org.springframework.http.MediaType"
+APPLICATION_JSON¹¶
+; ;(e9
+%93org.springframework.http.ResponseEntity$BodyBuilder"šorg.springframework.http.ResponseEntity$BodyBuilder#contentType(Lorg/springframework/http/MediaType;)Lorg/springframework/http/ResponseEntity$BodyBuilder;*W
+
+__unknown_file (;
+9
+%73org.springframework.http.ResponseEntity$BodyBuilder*F
+
+__unknown_file (*
+(
+%8"org.springframework.http.MediaType21contentType(Lorg/springframework/http/MediaType;)àÝ
+; ;(t.
+%10'org.springframework.http.ResponseEntity"uorg.springframework.http.ResponseEntity$BodyBuilder#body(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;*W
+
+__unknown_file (;
+9
+%93org.springframework.http.ResponseEntity$BodyBuilder*7
+
+__unknown_file (
+
+responsejava.util.Map2body(Ljava/lang/Object;)"<
+; ;(u0
+.
+%10'org.springframework.http.ResponseEntity* 
+38' 8(686
+8+ 8(4
+%0java.util.HashMap"java.util.HashMapf
+d
+8' 8(6
+%1"java.util.HashMap#<init>()V*5
+
+__unknown_file (
+
+%0java.util.HashMapd
+b
+8 8(7
+responsejava.util.Map"__id*5
+
+__unknown_file (
+
+%0java.util.HashMap¬
+©
+9 9(1
+%2+com.example.webshopba.service.KundenService"__id*d
+
+__unknown_file (H*F3
+1com.example.webshopba.controller.KundenController"
+kundenService¼¹
+9& 9(5
+%3java.lang.String"?com.example.webshopba.model.Kunden#getEmail()Ljava/lang/String;*H
+
+__unknown_file (,
+*
+user"com.example.webshopba.model.Kunden2
+getEmail()’
+9 9(6
+%4boolean"Lcom.example.webshopba.service.KundenService#emailExists(Ljava/lang/String;)Z*O
+
+__unknown_file (3
+1
+%2+com.example.webshopba.service.KundenService*4
+
+__unknown_file (
+
+%3java.lang.String2emailExists(Ljava/lang/String;)*
+2
+1*ú
+startingBlock67 6(Q†
+ƒ
+
+__unknown_file (
+%29"__id*Z
+
+__unknown_file (>*<
+*
+user"com.example.webshopba.model.Kunden"
+bestellungen~
+|
+
+__unknown_file (
+%30"__id*S
+
+__unknown_file (7*5
+*
+user"com.example.webshopba.model.Kunden"
+emailƒ
+€
+
+__unknown_file (
+%31"__id*W
+
+__unknown_file (;*9
+*
+user"com.example.webshopba.model.Kunden"
+	firstName
+
+
+__unknown_file (
+%32"__id*V
+
+__unknown_file (:*8
+*
+user"com.example.webshopba.model.Kunden"
+
+lastName‰
+†
+
+__unknown_file (
+%33"__id*]
+
+__unknown_file (A*?
+*
+user"com.example.webshopba.model.Kunden"
+lastUsedAddress
+
+
+__unknown_file (
+%34"__id*V
+
+__unknown_file (:*8
+*
+user"com.example.webshopba.model.Kunden"
+
+passwordƒ
+€
+
+__unknown_file (
+%35"__id*W
+
+__unknown_file (;*9
+*
+user"com.example.webshopba.model.Kunden"
+	warenkorbš
+—
+68 6(D
+%36"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*#
+
+__unknown_file (
+
+%35z
+x
+6L 6(P9
+*
+user"com.example.webshopba.model.Kunden"
+	warenkorb"__annotation*#
+
+__unknown_file (
+
+%36š
+—
+68 6(D
+%37"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*#
+
+__unknown_file (
+
+%30v
+t
+6L 6(P5
+*
+user"com.example.webshopba.model.Kunden"
+email"__annotation*#
+
+__unknown_file (
+
+%37š
+—
+68 6(D
+%38"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*#
+
+__unknown_file (
+
+%32y
+w
+6L 6(P8
+*
+user"com.example.webshopba.model.Kunden"
+
+lastName"__annotation*#
+
+__unknown_file (
+
+%38š
+—
+68 6(D
+%39"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*#
+
+__unknown_file (
+
+%33€
+~
+6L 6(P?
+*
+user"com.example.webshopba.model.Kunden"
+lastUsedAddress"__annotation*#
+
+__unknown_file (
+
+%39š
+—
+68 6(D
+%40"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*#
+
+__unknown_file (
+
+%29}
+{
+6L 6(P<
+*
+user"com.example.webshopba.model.Kunden"
+bestellungen"__annotation*#
+
+__unknown_file (
+
+%40š
+—
+68 6(D
+%41"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*#
+
+__unknown_file (
+
+%31z
+x
+6L 6(P9
+*
+user"com.example.webshopba.model.Kunden"
+	firstName"__annotation*#
+
+__unknown_file (
+
+%41š
+—
+68 6(D
+%42"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*#
+
+__unknown_file (
+
+%34y
+w
+6L 6(P8
+*
+user"com.example.webshopba.model.Kunden"
+
+password"__annotation*#
+
+__unknown_file (
+
+%42*
+3*¤"
+1=" =(/­
+ª
+=" =(/2
+%11+com.example.webshopba.service.KundenService"__id*d
+
+__unknown_file (H*F3
+1com.example.webshopba.controller.KundenController"
+kundenService¡ž
+=" =(L)
+%12"com.example.webshopba.model.Kunden"Œcom.example.webshopba.service.KundenService#registerNewUserAccount(Lcom/example/webshopba/model/Kunden;)Lcom/example/webshopba/model/Kunden;*P
+
+__unknown_file (4
+2
+%11+com.example.webshopba.service.KundenService*H
+
+__unknown_file (,
+*
+user"com.example.webshopba.model.Kunden2<registerNewUserAccount(Lcom/example/webshopba/model/Kunden;)”
+‘
+= =(M6
+registeredKunden"com.example.webshopba.model.Kunden"__id*G
+
+__unknown_file (+
+)
+%12"com.example.webshopba.model.Kunden¿¼
+>! >(9
+%13java.lang.Long":com.example.webshopba.model.Kunden#getId()Ljava/lang/Long;*T
+
+__unknown_file (8
+6
+registeredKunden"com.example.webshopba.model.Kunden2getId()”‘
+>! >(D
+%14java.lang.String"+java.lang.Long#toString()Ljava/lang/String;*3
+
+__unknown_file (
+
+%13java.lang.Long2
+toString()Ê
+Ç
+> >(E
+%15java.lang.String"__mapSet*7
+
+__unknown_file (
+
+responsejava.util.Map*(
+
+__unknown_file (
+
+kundenId*5
+
+__unknown_file (
+
+%14java.lang.StringÉÆ
+? ?(9
+%16java.lang.String"?com.example.webshopba.model.Kunden#getEmail()Ljava/lang/String;*T
+
+__unknown_file (8
+6
+registeredKunden"com.example.webshopba.model.Kunden2
+getEmail()Ç
+Ä
+? ?(:
+%17java.lang.String"__mapSet*7
+
+__unknown_file (
+
+responsejava.util.Map*%
+
+__unknown_file (	
+email*5
+
+__unknown_file (
+
+%16java.lang.StringÑÎ
+@" @(A
+%18java.lang.String"Ccom.example.webshopba.model.Kunden#getFirstName()Ljava/lang/String;*T
+
+__unknown_file (8
+6
+registeredKunden"com.example.webshopba.model.Kunden2getFirstName()Ë
+È
+@ @(B
+%19java.lang.String"__mapSet*7
+
+__unknown_file (
+
+responsejava.util.Map*)
+
+__unknown_file (
+	firstName*5
+
+__unknown_file (
+
+%18java.lang.StringÏÌ
+A! A(?
+%20java.lang.String"Bcom.example.webshopba.model.Kunden#getLastName()Ljava/lang/String;*T
+
+__unknown_file (8
+6
+registeredKunden"com.example.webshopba.model.Kunden2getLastName()Ê
+Ç
+A A(@
+%21java.lang.String"__mapSet*7
+
+__unknown_file (
+
+responsejava.util.Map*(
+
+__unknown_file (
+
+lastName*5
+
+__unknown_file (
+
+%20java.lang.StringÑÎ
+B$ B(E
+%22java.lang.Long"Ccom.example.webshopba.model.Kunden#getWarenkorbId()Ljava/lang/Long;*T
+
+__unknown_file (8
+6
+registeredKunden"com.example.webshopba.model.Kunden2getWarenkorbId()”‘
+B$ B(P
+%23java.lang.String"+java.lang.Long#toString()Ljava/lang/String;*3
+
+__unknown_file (
+
+%22java.lang.Long2
+toString()Í
+Ê
+B B(Q
+%24java.lang.String"__mapSet*7
+
+__unknown_file (
+
+responsejava.util.Map*+
+
+__unknown_file (
+warenkorbId*5
+
+__unknown_file (
+
+%23java.lang.Stringõ
+ò
+C C(":
+%253org.springframework.http.ResponseEntity$BodyBuilder"aorg.springframework.http.ResponseEntity#ok()Lorg/springframework/http/ResponseEntity$BodyBuilder;*G
+
+__unknown_file (+")
+'org.springframework.http.ResponseEntity˜
+•
+C/ C(I)
+%26"org.springframework.http.MediaType"__id*X
+
+__unknown_file (<*:$
+"org.springframework.http.MediaType"
+APPLICATION_JSON¼¹
+C C(J:
+%273org.springframework.http.ResponseEntity$BodyBuilder"šorg.springframework.http.ResponseEntity$BodyBuilder#contentType(Lorg/springframework/http/MediaType;)Lorg/springframework/http/ResponseEntity$BodyBuilder;*X
+
+__unknown_file (<
+:
+%253org.springframework.http.ResponseEntity$BodyBuilder*G
+
+__unknown_file (+
+)
+%26"org.springframework.http.MediaType21contentType(Lorg/springframework/http/MediaType;)áÞ
+C C(Y.
+%28'org.springframework.http.ResponseEntity"uorg.springframework.http.ResponseEntity$BodyBuilder#body(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;*X
+
+__unknown_file (<
+:
+%273org.springframework.http.ResponseEntity$BodyBuilder*7
+
+__unknown_file (
+
+responsejava.util.Map2body(Ljava/lang/Object;)"<
+C C(Z0
+.
+%28'org.springframework.http.ResponseEntity:6
+68 6(P*
+user"com.example.webshopba.model.KundenB53
+1com.example.webshopba.controller.KundenControllerH

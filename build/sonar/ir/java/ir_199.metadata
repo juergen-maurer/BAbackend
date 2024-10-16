@@ -1,0 +1,16 @@
+com.example.webshopba.service.KundenService#registerNewUserAccount(Lcom/example/webshopba/model/Kunden;)Lcom/example/webshopba/model/Kunden;
+692de620475b5580ee3dca53ed18a326
+com.example.webshopba.model.Cart#instance-init#
+com.example.webshopba.model.Cart#<init>()V
+==
+getPassword com.example.webshopba.model.Kunden#getPassword()Ljava/lang/String;
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;
+setLastName com.example.webshopba.model.Kunden#setLastName(Ljava/lang/String;)V
+setFirstName com.example.webshopba.model.Kunden#setFirstName(Ljava/lang/String;)V
+encode org.springframework.security.crypto.password.PasswordEncoder#encode(Ljava/lang/CharSequence;)Ljava/lang/String;
+setWarenkorb com.example.webshopba.model.Kunden#setWarenkorb(Lcom/example/webshopba/model/Cart;)V
+getFirstName com.example.webshopba.model.Kunden#getFirstName()Ljava/lang/String;
+getEmail com.example.webshopba.model.Kunden#getEmail()Ljava/lang/String;
+setEmail com.example.webshopba.model.Kunden#setEmail(Ljava/lang/String;)V
+setPassword com.example.webshopba.model.Kunden#setPassword(Ljava/lang/String;)V
+getLastName com.example.webshopba.model.Kunden#getLastName()Ljava/lang/String;

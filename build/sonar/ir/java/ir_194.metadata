@@ -1,0 +1,4 @@
+com.example.webshopba.service.ProductService#deleteAllProducts()V
+9458090b1c09a889e61aca5fa26bd479
+==
+deleteAll org.springframework.data.repository.CrudRepository#deleteAll()V

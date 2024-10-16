@@ -1,0 +1,21 @@
+
+Mcom.example.webshopba.service.ProductService#getAllProducts()Ljava/util/List;o
+eC:/Users/jurge/IdeaProjects/WebshopBA/src/main/java/com/example/webshopba/service/ProductService.java ('"1*Á
+1 ( ²
+¯
+ ( 8
+%02com.example.webshopba.repository.ProductRepository"__id*c
+
+__unknown_file (G*E.
+,com.example.webshopba.service.ProductService"
+productRepositoryØÕ
+ (*
+%1java.util.List"Porg.springframework.data.repository.ListCrudRepository#findAll()Ljava/util/List;*V
+
+__unknown_file (:
+8
+%02com.example.webshopba.repository.ProductRepository2	findAll()""
+ (+
+
+%1java.util.ListB0.
+,com.example.webshopba.service.ProductServiceH

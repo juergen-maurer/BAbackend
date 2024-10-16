@@ -1,0 +1,4 @@
+com.example.webshopba.service.ProductService#countProducts()J
+23115747b2e323333acc5b3d3f128967
+==
+count org.springframework.data.repository.CrudRepository#count()J

@@ -1,0 +1,26 @@
+com.example.webshopba.DataLoader#run([Ljava/lang/String;)V
+a3fda8aeacb4507c88c86fa72c8fcef6
+java.util.ArrayList#<init>()V
+java.lang.Math#random()D
+java.util.HashMap#<init>()V
+com.example.webshopba.model.Product#instance-init#
+java.util.ArrayList#instance-init#
+java.util.Collections#shuffle(Ljava/util/List;)V
+java.lang.Math#round(D)J
+com.example.webshopba.model.Product#<init>()V
+java.util.HashMap#instance-init#
+com.example.webshopba.enums.ProductCategory#toString()Ljava/lang/String;
+==
+countProducts com.example.webshopba.service.ProductService#countProducts()J
+setImageUrl com.example.webshopba.model.Product#setImageUrl(Ljava/lang/String;)V
+add java.util.List#add(Ljava/lang/Object;)Z
+setName com.example.webshopba.model.Product#setName(Ljava/lang/String;)V
+saveProduct com.example.webshopba.service.ProductService#saveProduct(Lcom/example/webshopba/model/Product;)Lcom/example/webshopba/model/Product;
+setCategory com.example.webshopba.model.Product#setCategory(Lcom/example/webshopba/enums/ProductCategory;)V
+get java.util.List#get(I)Ljava/lang/Object;
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+setDescription com.example.webshopba.model.Product#setDescription(Ljava/lang/String;)V
+setPrice com.example.webshopba.model.Product#setPrice(D)V
+get java.util.Map#get(Ljava/lang/Object;)Ljava/lang/Object;
+getOrDefault java.util.Map#getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+size java.util.List#size()I
